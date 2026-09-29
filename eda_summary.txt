@@ -1,0 +1,19 @@
+SMART ATTENDANCE AI - EDA SUMMARY
+=================================
+Total students analyzed: 500
+
+Risk category distribution:
+Risk_Category
+Low Risk       218
+High Risk      145
+Medium Risk    137
+
+Features most correlated with Attendance_Percentage (abs value):
+Average_Subject_Attendance    0.979474
+Python_Attendance             0.935369
+AI_Attendance                 0.932699
+Math_Attendance               0.924759
+DBMS_Attendance               0.894985
+
+Overall mean attendance: 76.34%
+Overall mean internal marks: 79.48%

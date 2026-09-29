@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction History - Smart Attendance AI</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background: #f1f5f9; color: #1e293b; }
+
+        .header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+            color: white; padding: 25px 7%;
+            display: flex; justify-content: space-between; align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15); flex-wrap: wrap; gap: 15px;
+        }
+        .brand { display: flex; align-items: center; gap: 14px; }
+        .brand-icon { width: 48px; height: 48px; background: rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 25px; }
+        .brand h1 { font-size: 22px; margin-bottom: 4px; }
+        .brand p { font-size: 13px; opacity: 0.8; }
+        .nav-link { color: white; text-decoration: none; font-size: 13px; font-weight: bold; background: rgba(255,255,255,0.12); padding: 9px 15px; border-radius: 30px; }
+        .nav-link:hover { background: rgba(255,255,255,0.22); }
+
+        .flash-wrap { width: 90%; max-width: 1100px; margin: 20px auto 0; }
+        .flash { padding: 14px 18px; border-radius: 10px; margin-bottom: 10px; font-size: 14px; border: 1px solid transparent; }
+        .flash-error { background: #fef2f2; color: #b91c1c; border-color: #fecaca; }
+        .flash-success { background: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
+
+        .container { width: 90%; max-width: 1100px; margin: 30px auto 40px; }
+        .card { background: white; border-radius: 18px; padding: 30px; box-shadow: 0 8px 25px rgba(15,23,42,0.07); }
+
+        .toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+        .filters { display: flex; gap: 8px; flex-wrap: wrap; }
+        .filter-link {
+            text-decoration: none; font-size: 13px; padding: 8px 14px; border-radius: 20px;
+            background: #f1f5f9; color: #334155; border: 1px solid #e2e8f0;
+        }
+        .filter-link.active { background: #2563eb; color: white; border-color: #2563eb; }
+
+        .clear-form button {
+            border: none; background: #fee2e2; color: #b91c1c; padding: 9px 16px;
+            border-radius: 20px; font-size: 13px; font-weight: bold; cursor: pointer;
+        }
+        .clear-form button:hover { background: #fecaca; }
+
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        thead th {
+            text-align: left; padding: 10px 12px; color: #64748b; font-size: 12px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        tbody td { padding: 10px 12px; border-bottom: 1px solid #f1f5f9; }
+        tbody tr:hover { background: #f8fafc; }
+
+        .badge { padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+        .badge-low { background: #f0fdf4; color: #15803d; }
+        .badge-medium { background: #fffbeb; color: #b45309; }
+        .badge-high { background: #fef2f2; color: #b91c1c; }
+
+        .empty-state { text-align: center; padding: 50px 20px; color: #64748b; }
+
+        .table-scroll { overflow-x: auto; }
+
+        footer { text-align: center; padding: 25px; color: #64748b; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="brand">
+        <div class="brand-icon">📜</div>
+        <div>
+            <h1>Prediction History</h1>
+            <p>Every prediction the model has made, saved for review</p>
+        </div>
+    </div>
+    <a class="nav-link" href="{{ url_for('home') }}">← Back to Dashboard</a>
+</header>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div class="flash-wrap">
+        {% for category, message in messages %}
+            <div class="flash flash-{{ category }}">{{ message }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+{% endwith %}
+
+<div class="container">
+    <div class="card">
+
+        <div class="toolbar">
+            <div class="filters">
+                <a class="filter-link {{ 'active' if not active_filter }}" href="{{ url_for('history') }}">All</a>
+                <a class="filter-link {{ 'active' if active_filter == 'Low Risk' }}" href="{{ url_for('history', risk='Low Risk') }}">Low Risk</a>
+                <a class="filter-link {{ 'active' if active_filter == 'Medium Risk' }}" href="{{ url_for('history', risk='Medium Risk') }}">Medium Risk</a>
+                <a class="filter-link {{ 'active' if active_filter == 'High Risk' }}" href="{{ url_for('history', risk='High Risk') }}">High Risk</a>
+            </div>
+
+            {% if records %}
+            <form class="clear-form" action="{{ url_for('clear_history') }}" method="POST"
+                  onsubmit="return confirm('Clear all saved predictions? This cannot be undone.');">
+                <button type="submit">🗑 Clear History</button>
+            </form>
+            {% endif %}
+        </div>
+
+        {% if records %}
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date (UTC)</th>
+                        <th>Attendance</th>
+                        <th>Subject Avg</th>
+                        <th>Internal</th>
+                        <th>Assignment</th>
+                        <th>Medical Leave</th>
+                        <th>Prediction</th>
+                        <th>Confidence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in records %}
+                    <tr>
+                        <td>{{ row["created_at"] }}</td>
+                        <td>{{ row["attendance"] }}%</td>
+                        <td>{{ ((row["math"] + row["python"] + row["dbms"] + row["ai"]) / 4) | round(1) }}%</td>
+                        <td>{{ row["internal"] }}%</td>
+                        <td>{{ row["assignment"] }}%</td>
+                        <td>{{ row["medical_leave"] | int }}</td>
+                        <td>
+                            {% if row["prediction"] == "Low Risk" %}
+                                <span class="badge badge-low">Low Risk</span>
+                            {% elif row["prediction"] == "Medium Risk" %}
+                                <span class="badge badge-medium">Medium Risk</span>
+                            {% else %}
+                                <span class="badge badge-high">High Risk</span>
+                            {% endif %}
+                        </td>
+                        <td>{{ row["confidence"] if row["confidence"] is not none else "-" }}{{ "%" if row["confidence"] is not none }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class="empty-state">
+            <p>No predictions saved yet. Run a prediction from the dashboard to see it here.</p>
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+
+<footer>
+    Smart Attendance Monitoring and Risk Prediction System
+    <br>
+    AI/ML Academic Project
+</footer>
+
+</body>
+</html>

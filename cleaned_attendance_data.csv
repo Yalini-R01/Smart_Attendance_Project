@@ -1,0 +1,501 @@
+Student_ID,Student_Name,Department,Semester,Total_Classes,Classes_Attended,Attendance_Percentage,Math_Attendance,Python_Attendance,DBMS_Attendance,AI_Attendance,Internal_Marks,Assignment_Percentage,Previous_Attendance,Medical_Leave,Average_Subject_Attendance,Attendance_Consistency,At_Risk_Subject_Count,Attendance_Trend,Risk_Category
+STU1001,Student_1,Computer Science,3,93,62,66.19,52.94,61.13,61.0,65.49,82.92,68.59,65.23,0,60.14,4.53,3,Stable,Medium Risk
+STU1002,Student_2,Information Technology,5,90,62,68.87,61.98,69.5,68.95,69.2,79.72,69.27,79.91,7,67.41,3.14,1,Declining,Medium Risk
+STU1003,Student_3,BCA,6,82,54,65.43,56.37,62.51,65.49,66.0,63.91,83.68,75.1,6,62.59,3.83,2,Declining,High Risk
+STU1004,Student_4,Data Analytics,6,96,73,75.63,64.39,72.99,75.05,76.44,88.7,86.05,79.45,8,72.22,4.68,1,Declining,Medium Risk
+STU1005,Student_5,Data Analytics,4,65,55,84.38,78.4,87.41,80.48,89.58,80.11500000000001,90.96,98.13,1,83.97,4.65,0,Declining,Low Risk
+STU1006,Student_6,Information Technology,4,97,63,64.81,71.44,58.12,55.9,59.38,82.18,78.46,61.72,3,61.21,6.04,3,Improving,High Risk
+STU1007,Student_7,Computer Science,5,94,65,69.22,69.0,74.46,69.78,70.1,87.57,78.53,82.21,7,70.83,2.13,0,Declining,Medium Risk
+STU1008,Student_8,BCA,3,80,76,95.01,100.0,88.02,90.4,100.0,88.44,99.22,99.35,9,94.6,5.46,0,Declining,Low Risk
+STU1009,Student_9,Computer Science,4,90,51,57.09,59.14,53.77,57.6,48.42,57.4,80.75,83.26,9,54.73,4.14,4,Declining,High Risk
+STU1010,Student_10,Computer Science,3,81,61,74.81,78.73,84.43,70.05,75.71,63.91,90.26,65.27,0,77.23,5.2,0,Improving,Medium Risk
+STU1011,Student_11,BCA,6,71,61,85.6,81.09,91.23,79.0,82.67,85.56,86.07,80.08,4,83.5,4.65,0,Improving,Low Risk
+STU1012,Student_12,Information Technology,5,92,57,61.47,64.09,61.96,62.88,59.62,67.93,87.68,64.82,0,62.14,1.64,4,Declining,Medium Risk
+STU1013,Student_13,BCA,6,70,40,57.04,60.68,52.33,57.94,52.51,63.35,73.66,60.21,9,55.86,3.58,4,Declining,High Risk
+STU1014,Student_14,Information Technology,6,72,44,60.94,58.06,58.3,64.42,60.1,71.92,79.84,76.54,1,60.22,2.55,4,Declining,High Risk
+STU1015,Student_15,BCA,6,81,77,94.51,97.31,94.88,100.0,100.0,92.45,94.8,89.16,9,98.05,2.13,0,Improving,Low Risk
+STU1016,Student_16,Information Technology,3,94,52,55.4,58.23,55.59,57.06,49.08,58.31,72.94,62.64,1,54.99,3.54,4,Declining,High Risk
+STU1017,Student_17,BCA,6,75,47,63.1,60.35,62.64,66.01,57.25,69.8,67.35,72.4,0,61.56,3.2,3,Declining,High Risk
+STU1018,Student_18,Computer Science,3,80,45,56.35,50.73,56.19,49.88,49.84,80.11500000000001,78.0,61.98,9,51.66,2.64,4,Declining,High Risk
+STU1019,Student_19,Information Technology,4,61,36,59.76,53.84,58.69,52.04,68.39,63.29,100.0,52.07,4,58.24,6.34,3,Improving,High Risk
+STU1020,Student_20,Data Analytics,5,64,52,81.67,82.1,74.46,91.16,79.35,88.71,81.17,92.93,4,81.77,6.07,0,Declining,Low Risk
+STU1021,Student_21,BCA,4,62,41,65.39,67.03,62.81,59.85,65.26,70.55,76.67,75.23,7,63.74,2.7,2,Declining,High Risk
+STU1022,Student_22,Data Analytics,3,62,49,79.48,75.51,84.05,73.21,77.46,85.13,79.25,84.27,3,77.56,4.04,0,Declining,Medium Risk
+STU1023,Student_23,Computer Science,3,95,76,80.38,80.51,73.54,80.14,75.66,89.95,79.33,82.01,7,77.46,2.96,0,Stable,Low Risk
+STU1024,Student_24,Information Technology,6,94,86,91.53,94.38,90.58,90.98,90.35,92.12,100.0,93.33,4,91.57,1.64,0,Stable,Low Risk
+STU1025,Student_25,Information Technology,4,93,51,55.2,58.29,51.11,49.79,67.5,77.12,63.63,54.57,2,56.67,7.04,3,Stable,High Risk
+STU1026,Student_26,BCA,4,62,57,91.69,99.45,92.25,89.87,98.66,77.05,85.69,96.82,4,95.06,4.09,0,Declining,Low Risk
+STU1027,Student_27,Data Analytics,6,63,51,81.62,88.01,79.68,89.0,77.36,90.64,69.02,81.87,0,83.51,5.07,0,Stable,Low Risk
+STU1028,Student_28,Information Technology,3,71,44,62.0,56.99,69.38,57.16,65.24,66.08,66.52,55.21,3,62.19,5.32,2,Improving,High Risk
+STU1029,Student_29,BCA,6,83,73,88.24,96.65,90.77,79.87,84.08,86.78,71.45,79.85,6,87.84,6.4,0,Improving,Low Risk
+STU1030,Student_30,Data Analytics,6,73,67,91.79,89.13,85.23,97.44,82.9,88.37,96.8,85.77,1,88.68,5.53,0,Improving,Low Risk
+STU1031,Student_31,Data Analytics,5,79,52,65.93,71.16,69.29,68.89,71.03,78.55,100.0,67.71,1,70.09,1.01,0,Stable,Medium Risk
+STU1032,Student_32,Computer Science,3,67,63,94.51,94.85,90.63,90.79,100.0,90.22,88.31,94.29,7,94.07,3.82,0,Stable,Low Risk
+STU1033,Student_33,Computer Science,3,89,66,74.54,72.48,71.66,65.05,79.77,71.79,64.33,76.26,4,72.24,5.22,0,Stable,Medium Risk
+STU1034,Student_34,BCA,4,72,58,80.95,71.91,82.52,76.48,78.6,70.63,81.64,84.95,1,77.38,3.83,0,Declining,Low Risk
+STU1035,Student_35,Information Technology,5,62,60,97.34,96.48,94.88,97.01,96.51,95.78,86.27,92.32,8,96.22,0.8,0,Improving,Low Risk
+STU1036,Student_36,Computer Science,3,90,63,70.55,62.75,75.01,77.54,74.29,78.23,91.79,82.27,8,72.4,5.7,1,Declining,Medium Risk
+STU1037,Student_37,Information Technology,4,97,87,89.97,94.8,86.09,83.75,91.92,94.68,86.66,87.82,0,89.14,4.42,0,Stable,Low Risk
+STU1038,Student_38,Information Technology,3,60,41,68.69,76.28,65.6,68.18,66.72,75.55,71.46,65.22,2,69.19,4.19,0,Improving,Medium Risk
+STU1039,Student_39,Data Analytics,5,77,69,89.37,85.38,86.08,93.42,81.27,73.97,87.37,93.23,4,86.54,4.38,0,Declining,Low Risk
+STU1040,Student_40,BCA,3,93,75,80.83,82.34,78.0,66.54,81.4,89.1,92.04,66.14,8,77.07,6.29,0,Improving,Medium Risk
+STU1041,Student_41,Computer Science,5,88,57,64.3,60.68,69.8,70.51,69.7,70.97,73.09,57.98,0,67.67,4.05,1,Improving,High Risk
+STU1042,Student_42,Information Technology,3,95,69,72.8,69.66,75.95,65.71,66.82,80.5,75.07,80.65,8,69.54,3.97,0,Declining,Medium Risk
+STU1043,Student_43,BCA,3,77,53,68.66,72.53,77.21,70.65,71.85,70.72,75.77,54.76,3,73.06,2.49,0,Improving,Medium Risk
+STU1044,Student_44,Data Analytics,3,75,44,58.36,58.17,69.7,59.84,60.02,84.42,59.38,67.3,1,61.93,4.54,3,Declining,High Risk
+STU1045,Student_45,Computer Science,6,89,50,56.28,64.98,51.13,62.79,60.03,63.31,74.93,68.37,9,59.73,5.27,4,Declining,High Risk
+STU1046,Student_46,Information Technology,3,66,46,69.9,67.49,70.25,73.2,74.26,73.75,60.58,66.94,0,71.3,2.65,0,Stable,High Risk
+STU1047,Student_47,Data Analytics,4,69,39,55.82,60.82,49.94,41.55,52.35,70.98,66.26,58.15,1,51.16,6.87,4,Stable,High Risk
+STU1048,Student_48,Information Technology,5,84,52,62.12,62.6,58.23,57.41,54.03,64.21,81.76,71.07,10,58.07,3.05,4,Declining,High Risk
+STU1049,Student_49,BCA,5,87,75,86.18,90.16,83.03,87.01,83.52,86.43,90.43,82.45,5,85.93,2.88,0,Improving,Low Risk
+STU1050,Student_50,Information Technology,5,64,55,85.45,83.21,80.16,84.28,89.89,96.35,92.9,92.39,5,84.38,3.52,0,Declining,Low Risk
+STU1051,Student_51,Information Technology,6,80,69,86.76,86.51,81.5,89.62,84.05,80.12,87.07,81.39,7,85.42,3.0,0,Improving,Low Risk
+STU1052,Student_52,Computer Science,4,74,51,68.64,68.06,67.92,73.37,65.17,79.05,89.45,64.82,6,68.63,2.97,0,Improving,High Risk
+STU1053,Student_53,Data Analytics,6,80,75,93.27,89.09,87.19,96.92,84.16,64.98,100.0,86.88,6,89.34,4.72,0,Improving,Low Risk
+STU1054,Student_54,Data Analytics,4,99,80,80.53,83.85,84.75,79.25,89.3,80.93,88.76,83.28,0,84.29,3.57,0,Stable,Low Risk
+STU1055,Student_55,Data Analytics,6,63,38,60.42,63.67,55.83,49.34,64.55,69.68,82.51,69.68,6,58.35,6.21,4,Declining,High Risk
+STU1056,Student_56,Computer Science,5,100,61,61.18,64.15,75.23,58.45,65.03,65.98,81.15,59.71,3,65.72,6.05,2,Stable,High Risk
+STU1057,Student_57,BCA,5,78,66,84.8,92.49,82.55,87.3,89.64,91.81,82.25,74.63,8,87.99,3.64,0,Improving,Low Risk
+STU1058,Student_58,Computer Science,6,91,57,62.44,69.68,62.8,55.89,65.32,70.49,60.9,53.77,5,63.42,5.0,2,Improving,High Risk
+STU1059,Student_59,BCA,6,77,59,76.81,74.94,70.34,80.6,75.59,78.15,86.45,79.97,1,75.37,3.64,0,Declining,Low Risk
+STU1060,Student_60,BCA,6,72,70,97.65,99.51,100.0,100.0,96.83,85.92,99.17,100.0,9,99.08,1.32,0,Stable,Low Risk
+STU1061,Student_61,Information Technology,5,91,50,55.17,52.05,60.77,55.93,53.03,54.49,81.25,58.32,3,55.44,3.39,4,Declining,High Risk
+STU1062,Student_62,BCA,3,88,49,55.71,55.83,57.2,40.0,68.89,61.01,61.28,52.62,2,55.48,10.28,3,Improving,High Risk
+STU1063,Student_63,Data Analytics,4,65,64,97.7,94.7,90.97,90.03,100.0,96.65,84.67,100.0,10,93.93,3.92,0,Stable,Low Risk
+STU1064,Student_64,Information Technology,3,88,71,80.14,88.24,81.19,91.46,77.82,64.18,88.68,78.22,8,84.68,5.43,0,Stable,Medium Risk
+STU1065,Student_65,Data Analytics,6,90,54,60.46,62.28,54.85,57.18,62.78,66.08,72.54,57.43,9,59.27,3.36,4,Improving,High Risk
+STU1066,Student_66,Data Analytics,3,75,70,93.58,92.49,100.0,81.68,88.53,83.92,72.61,85.92,7,90.68,6.63,0,Improving,Low Risk
+STU1067,Student_67,Information Technology,3,97,90,92.86,98.82,96.9,100.0,100.0,100.0,94.82,100.0,10,98.93,1.27,0,Declining,Low Risk
+STU1068,Student_68,Data Analytics,3,86,67,78.06,67.2,78.53,78.14,74.75,86.27,64.41,57.74,1,74.66,4.55,0,Improving,Medium Risk
+STU1069,Student_69,Computer Science,5,73,60,81.74,71.67,69.56,88.37,84.24,77.32,75.5,88.12,6,78.46,8.01,0,Declining,Medium Risk
+STU1070,Student_70,Data Analytics,5,60,40,66.75,70.73,61.83,68.41,72.08,85.47,90.23,63.04,3,68.26,3.94,1,Improving,Medium Risk
+STU1071,Student_71,Information Technology,6,87,50,57.17,57.47,60.61,59.92,59.1,64.8,89.69,53.89,4,59.28,1.17,4,Improving,High Risk
+STU1072,Student_72,Computer Science,4,68,55,80.57,81.82,86.63,82.74,81.04,89.33,72.15,94.1,2,83.06,2.15,0,Declining,Low Risk
+STU1073,Student_73,Data Analytics,4,91,62,67.67,61.04,73.22,71.86,67.73,64.58,73.93,61.96,2,68.46,4.74,1,Improving,Medium Risk
+STU1074,Student_74,Computer Science,3,81,68,83.54,83.42,75.58,97.2,83.25,91.18,86.37,78.1,4,84.86,7.8,0,Improving,Low Risk
+STU1075,Student_75,BCA,3,79,72,90.96,100.0,92.47,96.78,88.08,82.68,100.0,89.92,10,94.33,4.49,0,Stable,Low Risk
+STU1076,Student_76,Data Analytics,4,66,37,55.78,59.9,60.86,46.3,53.53,61.87,65.75,59.09,6,55.15,5.83,4,Declining,High Risk
+STU1077,Student_77,Data Analytics,6,89,72,80.62,81.46,72.32,83.3,88.01,79.54,79.57,77.08,3,81.27,5.69,0,Improving,Medium Risk
+STU1078,Student_78,Computer Science,5,66,43,64.95,62.75,64.91,71.79,64.4,76.44,91.21,52.35,4,65.96,3.46,3,Improving,High Risk
+STU1079,Student_79,BCA,6,77,71,92.58,90.6,93.95,99.79,88.65,82.7,87.17,85.65,5,93.25,4.23,0,Improving,Low Risk
+STU1080,Student_80,BCA,3,94,62,65.91,55.26,64.4,63.35,63.33,79.09,83.47,76.16,2,61.58,3.68,4,Declining,Medium Risk
+STU1081,Student_81,Information Technology,3,97,79,81.26,82.55,72.0,88.25,86.76,76.9,69.92,81.86,5,82.39,6.35,0,Stable,Medium Risk
+STU1082,Student_82,Data Analytics,6,100,79,78.8,83.03,77.17,84.37,82.18,85.42,81.63,82.41,7,81.69,2.72,0,Declining,Low Risk
+STU1083,Student_83,Computer Science,3,99,71,72.04,64.16,70.4,87.47,74.84,80.95,63.02,69.94,2,74.22,8.54,1,Stable,High Risk
+STU1084,Student_84,Information Technology,3,82,69,84.14,80.83,83.4,79.64,82.85,82.37,75.72,78.86,6,81.68,1.52,0,Improving,Medium Risk
+STU1085,Student_85,BCA,4,68,59,86.21,80.42,83.39,83.16,89.07,80.26,95.81,99.63,7,84.01,3.15,0,Declining,Low Risk
+STU1086,Student_86,BCA,6,94,75,79.38,74.55,77.16,77.54,76.16,81.93,83.16,77.87,5,76.35,1.16,0,Stable,Low Risk
+STU1087,Student_87,Computer Science,5,92,81,87.61,87.88,87.41,84.67,86.31,88.83,85.0,84.07,3,86.57,1.23,0,Improving,Low Risk
+STU1088,Student_88,Data Analytics,3,100,97,97.29,86.86,99.5,91.95,100.0,100.0,86.02,100.0,6,94.58,5.48,0,Stable,Low Risk
+STU1089,Student_89,Information Technology,6,86,63,73.03,76.1,71.51,56.45,77.4,85.38,77.96,67.25,8,70.37,8.33,1,Improving,Medium Risk
+STU1090,Student_90,Information Technology,6,65,50,77.13,80.9,75.08,74.52,72.22,87.52,85.43,72.37,2,75.68,3.2,0,Improving,Low Risk
+STU1091,Student_91,Data Analytics,6,80,44,55.54,54.28,56.0,57.75,51.26,94.7,80.37,55.62,6,54.82,2.39,4,Stable,High Risk
+STU1092,Student_92,Information Technology,6,78,70,89.23,76.83,79.62,86.27,89.77,89.28,62.82,89.23,7,83.12,5.15,0,Stable,Low Risk
+STU1093,Student_93,Information Technology,3,94,73,77.37,72.39,79.76,88.98,86.0,83.69,74.24,79.45,3,81.78,6.36,0,Stable,Medium Risk
+STU1094,Student_94,Data Analytics,6,76,55,72.54,78.71,72.54,72.62,62.96,83.28,81.49,89.28,4,71.71,5.64,1,Declining,Medium Risk
+STU1095,Student_95,Information Technology,4,73,43,59.05,45.16,59.24,66.79,60.44,63.5,71.49,61.74,9,57.91,7.9,3,Stable,High Risk
+STU1096,Student_96,Data Analytics,6,63,59,93.26,91.52,98.06,94.82,86.38,83.41,95.32,74.23,3,92.7,4.32,0,Improving,Low Risk
+STU1097,Student_97,Computer Science,5,94,68,71.99,66.09,62.22,76.94,68.81,73.34,82.27,74.6,6,68.52,5.4,1,Stable,Medium Risk
+STU1098,Student_98,BCA,6,90,76,84.35,88.37,74.48,86.03,82.53,88.14,83.34,84.65,1,82.85,5.26,0,Stable,Low Risk
+STU1099,Student_99,BCA,5,61,37,61.42,58.05,62.79,69.64,59.32,71.25,68.51,61.77,10,62.45,4.5,3,Stable,High Risk
+STU1100,Student_100,Computer Science,5,77,74,96.35,98.37,96.31,96.68,93.68,89.46,90.54,98.31,6,96.26,1.68,0,Stable,Low Risk
+STU1101,Student_101,Information Technology,5,79,50,62.67,65.5,63.52,65.65,62.71,81.9,85.96,62.44,8,64.34,1.26,2,Stable,High Risk
+STU1102,Student_102,Computer Science,6,79,50,63.58,72.76,61.27,65.78,60.9,80.52,67.65,63.16,6,65.18,4.78,2,Stable,High Risk
+STU1103,Student_103,Information Technology,5,97,89,91.94,90.92,95.26,90.21,84.62,85.08,89.94,96.84,3,90.25,3.78,0,Declining,Low Risk
+STU1104,Student_104,Computer Science,3,66,62,94.24,96.12,98.9,96.67,98.14,82.05,93.67,89.9,3,97.46,1.11,0,Improving,Low Risk
+STU1105,Student_105,Information Technology,6,72,46,64.12,56.7,66.54,77.53,67.89,82.94,90.87,56.54,7,67.17,7.38,1,Improving,High Risk
+STU1106,Student_106,Information Technology,5,67,50,75.2,81.15,73.9,73.58,79.42,85.03,78.36,99.39,9,77.01,3.33,0,Declining,Medium Risk
+STU1107,Student_107,Information Technology,4,70,61,86.54,82.74,76.0,89.06,78.84,71.09,97.19,80.81,1,81.66,4.9,0,Improving,Low Risk
+STU1108,Student_108,BCA,5,97,90,92.77,89.97,96.62,100.0,94.26,84.24,100.0,93.57,9,95.21,3.65,0,Stable,Low Risk
+STU1109,Student_109,Data Analytics,6,98,70,71.3,71.19,77.41,78.14,74.68,78.41,78.58,59.33,9,75.36,2.73,0,Improving,Medium Risk
+STU1110,Student_110,BCA,6,61,47,77.23,69.42,80.45,77.3,72.08,85.98,80.37,78.16,1,74.81,4.32,0,Stable,Medium Risk
+STU1111,Student_111,Data Analytics,6,85,74,86.89,88.04,82.5,72.59,86.94,91.38,84.5,79.43,1,82.52,6.1,0,Improving,Low Risk
+STU1112,Student_112,Information Technology,4,69,60,86.44,91.28,89.81,89.54,85.86,86.17,84.98,82.9,7,89.12,2.0,0,Improving,Low Risk
+STU1113,Student_113,BCA,6,67,59,88.67,90.13,92.97,75.35,97.88,89.58,97.31,97.03,9,89.08,8.4,0,Declining,Low Risk
+STU1114,Student_114,Data Analytics,4,71,56,79.51,71.56,87.3,88.33,89.13,81.29,86.04,83.28,4,84.08,7.26,0,Declining,Low Risk
+STU1115,Student_115,BCA,5,67,40,59.5,58.88,55.12,60.52,51.18,66.38,75.08,64.05,7,56.42,3.61,4,Declining,High Risk
+STU1116,Student_116,BCA,5,80,75,93.87,97.58,92.74,99.87,100.0,85.15,80.38,79.7,10,97.55,2.94,0,Improving,Low Risk
+STU1117,Student_117,Computer Science,3,100,92,92.22,82.83,95.96,86.81,87.64,86.65,81.05,100.0,3,88.31,4.78,0,Declining,Low Risk
+STU1118,Student_118,Computer Science,4,84,75,89.32,83.94,89.61,80.0,94.22,84.92,100.0,79.78,2,86.94,5.42,0,Improving,Low Risk
+STU1119,Student_119,Computer Science,3,89,53,59.29,63.68,53.71,60.86,64.15,56.6,70.83,71.52,10,60.6,4.17,4,Declining,High Risk
+STU1120,Student_120,Computer Science,3,80,51,63.79,65.14,65.86,63.59,58.81,80.11500000000001,67.34,71.96,3,63.35,2.75,2,Declining,High Risk
+STU1121,Student_121,Data Analytics,4,60,52,86.97,89.03,89.87,84.03,89.44,84.59,100.0,91.59,5,88.09,2.36,0,Declining,Low Risk
+STU1122,Student_122,BCA,4,63,35,56.0,65.29,56.43,56.5,55.46,67.95,73.62,49.16,4,58.42,3.99,3,Improving,High Risk
+STU1123,Student_123,BCA,3,71,69,97.11,99.45,98.2,100.0,99.88,86.72,99.19,98.32,5,99.38,0.71,0,Stable,Low Risk
+STU1124,Student_124,Data Analytics,4,69,49,71.22,74.51,69.92,76.22,72.37,80.95,77.79,67.45,2,73.26,2.36,0,Improving,Medium Risk
+STU1125,Student_125,Information Technology,5,94,81,85.93,99.48,93.32,92.23,91.91,75.04,84.08,86.16,7,94.24,3.07,0,Stable,Low Risk
+STU1126,Student_126,BCA,3,94,88,93.17,92.1,88.66,98.23,93.54,73.9,89.55,91.17,7,93.13,3.44,0,Stable,Low Risk
+STU1127,Student_127,Computer Science,4,95,68,71.97,67.98,69.03,80.85,71.13,74.6,65.76,55.66,2,72.25,5.09,0,Improving,Medium Risk
+STU1128,Student_128,Information Technology,4,86,59,68.72,70.86,68.78,67.58,74.2,82.04,76.92,77.7,5,70.35,2.51,0,Declining,High Risk
+STU1129,Student_129,BCA,5,82,67,81.18,83.37,85.57,68.85,84.08,95.03,87.61,80.53,0,80.47,6.75,0,Stable,Low Risk
+STU1130,Student_130,BCA,4,86,69,79.98,77.35,72.5,78.85,83.64,87.25,100.0,76.1,2,78.08,3.97,0,Improving,Low Risk
+STU1131,Student_131,BCA,5,76,55,72.59,67.43,66.04,77.46,69.27,65.92,80.79,68.11,10,70.05,4.43,0,Improving,Medium Risk
+STU1132,Student_132,BCA,4,87,70,80.88,92.43,70.69,75.06,75.65,79.54,61.14,83.74,5,78.46,8.29,0,Stable,Medium Risk
+STU1133,Student_133,Computer Science,4,92,88,95.22,96.86,95.38,94.16,92.38,89.9,91.43,88.07,6,94.7,1.64,0,Improving,Low Risk
+STU1134,Student_134,BCA,4,91,68,75.11,71.45,69.52,70.96,72.0,80.22,100.0,57.07,9,70.98,0.92,0,Improving,Medium Risk
+STU1135,Student_135,Information Technology,3,85,54,63.46,68.04,61.54,72.47,67.39,77.87,83.57,66.72,7,67.36,3.89,1,Declining,High Risk
+STU1136,Student_136,Data Analytics,5,62,44,71.22,70.67,74.53,75.72,76.1,69.71,71.06,75.37,8,74.26,2.15,0,Declining,Medium Risk
+STU1137,Student_137,BCA,3,89,64,71.95,70.68,68.74,75.86,71.17,77.9,85.48,70.35,7,71.61,2.62,0,Stable,Low Risk
+STU1138,Student_138,Computer Science,4,75,45,60.64,63.45,61.79,64.37,67.79,75.65,65.93,51.45,5,64.35,2.19,3,Improving,High Risk
+STU1139,Student_139,Data Analytics,6,90,56,62.0,55.54,60.51,61.78,68.85,79.51,60.56,62.71,6,61.67,4.76,3,Stable,High Risk
+STU1140,Student_140,Data Analytics,6,82,69,84.44,86.2,87.8,85.62,85.65,76.55,82.96,72.72,3,86.32,0.89,0,Improving,Low Risk
+STU1141,Student_141,Information Technology,5,96,67,69.6,79.16,71.97,62.49,65.49,73.56,79.19,61.38,9,69.78,6.41,1,Improving,Medium Risk
+STU1142,Student_142,Computer Science,6,73,70,96.06,98.39,92.6,82.94,100.0,66.6,74.11,90.06,1,93.48,6.68,0,Improving,Low Risk
+STU1143,Student_143,Data Analytics,6,98,64,65.47,63.59,64.63,66.38,65.17,69.49,64.52,72.23,9,64.94,1.01,2,Declining,High Risk
+STU1144,Student_144,Data Analytics,4,94,56,59.25,56.72,64.47,61.2,59.88,67.47,72.69,56.35,9,60.57,2.78,4,Stable,High Risk
+STU1145,Student_145,Information Technology,6,73,64,87.4,85.35,89.37,94.66,85.7,76.17,83.99,83.82,1,88.77,3.75,0,Improving,Low Risk
+STU1146,Student_146,Information Technology,4,79,73,92.88,91.61,85.9,100.0,88.44,88.12,95.03,100.0,7,91.49,5.31,0,Declining,Low Risk
+STU1147,Student_147,Computer Science,4,81,54,66.96,65.07,70.24,76.38,59.62,74.68,64.68,69.78,10,67.83,6.2,1,Stable,High Risk
+STU1148,Student_148,Computer Science,5,91,58,63.69,68.27,58.27,57.7,66.85,55.59,82.17,66.4,6,62.77,4.82,2,Stable,High Risk
+STU1149,Student_149,Information Technology,6,88,55,62.99,54.32,70.05,60.87,59.07,75.07,62.81,60.03,3,61.08,5.71,3,Stable,High Risk
+STU1150,Student_150,Computer Science,6,94,73,77.45,81.76,82.57,80.33,92.74,72.42,99.02,72.68,9,84.35,4.91,0,Improving,Medium Risk
+STU1151,Student_151,Information Technology,4,75,56,75.14,73.24,76.59,90.33,69.71,82.7,64.17,57.65,5,77.47,7.81,0,Improving,Medium Risk
+STU1152,Student_152,Data Analytics,5,80,53,66.16,68.04,66.94,75.04,59.87,64.52,65.46,73.91,1,67.47,5.38,1,Declining,Medium Risk
+STU1153,Student_153,Information Technology,3,77,44,56.94,51.31,55.9,63.66,59.49,70.86,75.49,60.53,2,57.59,4.55,4,Declining,High Risk
+STU1154,Student_154,Data Analytics,6,97,73,75.7,82.35,79.1,73.38,83.35,76.8,98.28,74.27,7,79.54,3.89,0,Stable,Low Risk
+STU1155,Student_155,Data Analytics,5,72,69,96.25,100.0,94.4,90.95,96.57,90.74,96.09,95.15,5,95.48,3.29,0,Stable,Low Risk
+STU1156,Student_156,BCA,5,84,70,83.06,87.86,84.24,87.79,85.92,83.37,91.31,88.95,2,86.45,1.5,0,Declining,Low Risk
+STU1157,Student_157,Computer Science,6,64,49,76.31,68.73,80.67,69.7,67.09,77.3,82.14,63.87,8,71.55,5.35,0,Improving,Medium Risk
+STU1158,Student_158,BCA,5,94,56,59.76,63.91,56.95,58.33,56.37,59.6,62.6,55.04,1,58.89,2.98,4,Improving,High Risk
+STU1159,Student_159,BCA,3,75,49,65.85,67.88,62.77,65.17,60.49,62.82,71.32,56.76,2,64.08,2.75,2,Improving,High Risk
+STU1160,Student_160,Information Technology,4,73,49,67.68,59.65,61.7,77.23,58.2,70.78,65.1,81.85,5,64.19,7.63,3,Declining,Medium Risk
+STU1161,Student_161,Information Technology,3,83,73,87.89,87.77,82.56,85.76,88.47,84.48,75.55,94.89,0,86.14,2.29,0,Declining,Low Risk
+STU1162,Student_162,BCA,5,80,74,92.7,94.52,83.56,78.06,81.48,81.85,95.0,75.08,4,84.4,6.16,0,Improving,Low Risk
+STU1163,Student_163,Data Analytics,3,94,88,93.77,96.55,97.42,96.8,87.16,92.2,80.34,81.66,10,94.48,4.24,0,Improving,Low Risk
+STU1164,Student_164,Data Analytics,3,81,79,97.34,98.22,100.0,93.14,94.65,86.57,96.73,96.28,10,96.5,2.73,0,Stable,Low Risk
+STU1165,Student_165,Data Analytics,5,81,79,97.24,98.7,100.0,97.5,93.09,81.04,80.46,93.46,9,97.32,2.6,0,Improving,Low Risk
+STU1166,Student_166,Information Technology,5,64,61,95.98,100.0,87.85,95.46,97.96,85.97,95.75,85.38,3,95.32,4.6,0,Improving,Low Risk
+STU1167,Student_167,Data Analytics,5,60,35,58.09,64.22,61.71,56.45,59.62,72.95,67.06,73.65,0,60.5,2.85,4,Declining,High Risk
+STU1168,Student_168,Computer Science,6,76,46,60.93,46.59,68.04,65.67,65.39,75.02,87.57,63.43,8,61.42,8.63,1,Stable,High Risk
+STU1169,Student_169,Data Analytics,6,100,68,68.09,66.5,65.81,58.89,71.85,90.67,80.69,71.89,4,65.76,4.61,1,Declining,Medium Risk
+STU1170,Student_170,Computer Science,3,97,76,78.77,77.95,79.28,75.67,84.48,75.1,95.68,73.24,8,79.35,3.23,0,Improving,Medium Risk
+STU1171,Student_171,Computer Science,6,85,50,59.17,50.41,49.13,63.27,59.16,71.04,64.99,64.95,1,55.49,5.92,4,Declining,High Risk
+STU1172,Student_172,Computer Science,5,85,78,91.37,91.84,92.7,87.68,92.89,89.53,90.81,88.33,7,91.28,2.11,0,Improving,Low Risk
+STU1173,Student_173,Information Technology,5,76,62,81.52,87.76,76.2,71.87,84.08,81.5,75.03,79.25,6,79.98,6.27,0,Stable,Medium Risk
+STU1174,Student_174,BCA,3,67,52,78.32,72.89,79.32,82.33,79.03,76.24,78.94,83.21,10,78.39,3.43,0,Declining,Medium Risk
+STU1175,Student_175,BCA,5,60,37,62.11,63.79,54.3,68.85,60.12,60.55,71.54,49.08,1,61.76,5.31,3,Improving,High Risk
+STU1176,Student_176,Data Analytics,5,73,48,65.89,61.31,68.6,65.62,64.23,70.56,68.98,78.67,4,64.94,2.62,2,Declining,Medium Risk
+STU1177,Student_177,BCA,5,72,45,61.89,58.53,67.02,50.13,57.81,64.26,61.89,63.35,10,58.37,5.98,3,Stable,High Risk
+STU1178,Student_178,Computer Science,3,67,61,91.63,99.02,87.72,95.87,93.74,72.42,76.26,100.0,4,94.09,4.13,0,Declining,Low Risk
+STU1179,Student_179,Information Technology,5,70,56,80.12,77.41,74.44,70.16,79.65,74.69,60.67,71.52,7,75.41,3.55,0,Improving,Medium Risk
+STU1180,Student_180,BCA,6,61,53,86.61,88.92,75.83,88.46,83.29,75.6,77.07,79.23,1,84.12,5.27,0,Improving,Low Risk
+STU1181,Student_181,Information Technology,5,84,57,67.73,58.37,66.4,62.4,64.42,80.15,83.53,58.43,8,62.9,2.97,3,Improving,High Risk
+STU1182,Student_182,Computer Science,3,98,70,70.96,80.28,68.06,64.0,64.91,81.74,63.05,72.97,3,69.31,6.51,2,Stable,Medium Risk
+STU1183,Student_183,Data Analytics,6,88,64,72.41,75.42,64.65,69.76,77.3,70.35,66.14,72.94,6,71.78,4.97,1,Stable,Medium Risk
+STU1184,Student_184,BCA,6,78,68,87.68,86.77,89.95,86.58,88.07,82.37,100.0,83.97,9,87.84,1.35,0,Improving,Low Risk
+STU1185,Student_185,Data Analytics,3,77,68,88.21,91.09,85.96,84.35,83.9,69.83,82.15,80.1,7,86.32,2.86,0,Improving,Low Risk
+STU1186,Student_186,Data Analytics,6,72,46,63.89,56.84,58.51,67.43,67.94,69.8,78.35,53.76,5,62.68,5.04,2,Improving,Medium Risk
+STU1187,Student_187,Computer Science,4,65,62,95.49,100.0,92.71,92.81,92.68,91.16,98.94,95.1,2,94.55,3.15,0,Stable,Low Risk
+STU1188,Student_188,Data Analytics,5,84,51,60.19,58.57,65.54,66.07,53.16,78.68,79.73,56.46,3,60.84,5.33,2,Improving,High Risk
+STU1189,Student_189,Computer Science,4,83,78,93.53,92.51,96.55,95.22,98.64,81.39,76.22,88.05,9,95.73,2.22,0,Improving,Low Risk
+STU1190,Student_190,Data Analytics,6,60,36,59.32,56.86,58.67,55.13,56.63,80.11,70.31,71.69,2,56.82,1.26,4,Declining,Medium Risk
+STU1191,Student_191,BCA,6,77,51,66.38,63.47,69.47,61.18,64.33,62.74,60.32,65.72,7,64.61,3.03,3,Stable,High Risk
+STU1192,Student_192,BCA,6,71,65,91.4,94.87,85.59,81.51,91.6,76.15,100.0,100.0,5,88.39,5.18,0,Declining,Low Risk
+STU1193,Student_193,BCA,6,66,41,62.72,64.0,62.88,64.46,68.43,78.9,58.55,58.45,3,64.94,2.09,3,Improving,Medium Risk
+STU1194,Student_194,Data Analytics,6,88,64,72.78,76.04,73.52,70.66,72.88,91.12,69.55,74.74,7,73.28,1.92,0,Stable,Medium Risk
+STU1195,Student_195,Information Technology,3,81,60,74.34,74.3,71.99,60.11,68.35,82.4,70.48,73.9,3,68.69,5.39,1,Stable,Medium Risk
+STU1196,Student_196,Computer Science,4,85,56,65.55,68.11,67.72,62.33,68.27,74.17,61.08,51.97,3,66.61,2.48,1,Improving,High Risk
+STU1197,Student_197,Data Analytics,5,89,76,85.54,83.45,81.64,80.13,83.12,65.93,100.0,96.97,5,82.08,1.32,0,Declining,Low Risk
+STU1198,Student_198,Computer Science,5,100,92,91.61,100.0,94.16,100.0,100.0,70.04,100.0,90.53,8,98.54,2.53,0,Stable,Low Risk
+STU1199,Student_199,Data Analytics,3,92,85,92.61,84.77,95.37,82.39,92.6,87.71,86.18,98.58,9,88.78,5.36,0,Declining,Low Risk
+STU1200,Student_200,Information Technology,3,85,59,69.59,75.9,55.01,60.94,58.42,73.45,65.07,63.57,6,62.57,7.98,3,Improving,High Risk
+STU1201,Student_201,Data Analytics,5,96,75,77.83,84.67,83.78,84.49,79.61,71.18,60.44,76.51,7,83.14,2.06,0,Stable,Medium Risk
+STU1202,Student_202,Information Technology,5,79,52,65.68,61.42,50.44,73.82,75.4,75.08,73.68,58.75,8,65.27,10.13,2,Improving,Medium Risk
+STU1203,Student_203,Data Analytics,3,100,66,65.53,76.67,62.45,61.06,73.41,75.41,72.88,75.41,2,68.4,6.76,2,Declining,Medium Risk
+STU1204,Student_204,BCA,3,91,56,61.93,66.91,67.06,58.14,71.09,80.43,67.55,64.43,2,65.8,4.73,1,Stable,High Risk
+STU1205,Student_205,Data Analytics,3,86,82,95.42,100.0,93.83,99.12,90.32,89.03,94.7,98.36,5,95.82,3.96,0,Stable,Low Risk
+STU1206,Student_206,Data Analytics,5,97,90,93.18,93.32,85.85,79.22,97.74,96.76,95.2,100.0,6,89.03,7.08,0,Declining,Low Risk
+STU1207,Student_207,Information Technology,3,81,72,88.43,87.34,82.96,77.26,84.82,80.11500000000001,91.87,97.68,7,83.1,3.71,0,Declining,Low Risk
+STU1208,Student_208,Information Technology,5,89,69,77.26,76.21,82.39,75.58,78.38,78.84,79.33,83.38,1,78.14,2.66,0,Declining,Low Risk
+STU1209,Student_209,Data Analytics,4,71,54,76.1,78.05,66.49,85.4,69.73,87.76,70.84,64.72,8,74.92,7.38,0,Improving,Low Risk
+STU1210,Student_210,Information Technology,4,99,77,77.78,84.78,83.42,75.16,74.56,72.17,89.44,72.21,4,79.48,4.65,0,Improving,Low Risk
+STU1211,Student_211,Data Analytics,5,85,66,78.07,78.98,77.8,78.68,74.69,100.0,83.06,70.04,9,77.54,1.7,0,Improving,Medium Risk
+STU1212,Student_212,BCA,5,92,68,73.69,69.13,67.72,80.49,78.18,81.16,89.41,79.51,7,73.88,5.54,0,Declining,Medium Risk
+STU1213,Student_213,Information Technology,5,78,47,60.67,64.79,57.75,73.31,64.67,75.35,81.27,62.03,10,65.13,5.52,3,Stable,High Risk
+STU1214,Student_214,Data Analytics,6,95,57,60.4,65.01,55.32,56.94,61.79,76.38,59.0,49.28,6,59.76,3.85,3,Improving,High Risk
+STU1215,Student_215,BCA,6,63,60,95.95,99.22,100.0,95.85,89.19,100.0,81.64,94.44,5,96.06,4.26,0,Stable,Low Risk
+STU1216,Student_216,Data Analytics,6,64,48,75.73,79.45,79.39,86.66,74.17,85.42,74.09,63.77,2,79.92,4.44,0,Improving,Low Risk
+STU1217,Student_217,Computer Science,5,80,77,95.99,94.63,87.39,86.85,92.26,75.35,82.23,95.56,4,90.28,3.28,0,Stable,Low Risk
+STU1218,Student_218,Computer Science,4,90,56,62.03,57.39,60.02,68.2,66.38,84.14,81.67,48.79,9,63.0,4.44,2,Improving,High Risk
+STU1219,Student_219,Data Analytics,3,93,73,78.84,74.5,74.52,72.73,84.73,77.75,86.88,83.07,4,76.62,4.74,0,Declining,Medium Risk
+STU1220,Student_220,Information Technology,5,78,50,63.93,55.75,70.4,64.55,69.21,74.63,86.15,66.96,0,64.98,5.76,2,Declining,High Risk
+STU1221,Student_221,Computer Science,3,86,57,65.89,67.07,59.14,64.43,62.11,64.42,80.2,81.15,2,63.19,2.92,3,Declining,Medium Risk
+STU1222,Student_222,Data Analytics,6,82,46,56.29,55.88,64.31,50.54,42.59,74.54,73.05,63.08,6,53.33,7.91,4,Declining,High Risk
+STU1223,Student_223,BCA,6,99,60,60.11,57.92,59.95,54.22,51.28,66.84,85.06,56.73,6,55.84,3.34,4,Improving,Medium Risk
+STU1224,Student_224,Computer Science,3,86,81,94.42,79.65,88.61,96.08,100.0,88.29,81.64,100.0,10,91.08,7.77,0,Declining,Low Risk
+STU1225,Student_225,BCA,6,77,53,68.83,62.59,65.44,74.8,66.82,73.7,78.54,57.64,10,67.41,4.53,1,Improving,High Risk
+STU1226,Student_226,Data Analytics,3,99,80,81.15,86.75,77.14,80.37,77.4,96.92,99.44,73.45,5,80.41,3.87,0,Improving,Low Risk
+STU1227,Student_227,Information Technology,5,64,48,75.0,71.67,68.62,75.42,83.21,94.61,82.4,77.66,6,74.73,5.46,0,Stable,Medium Risk
+STU1228,Student_228,BCA,3,100,72,72.22,74.02,72.69,75.65,78.55,77.87,76.68,54.95,8,75.23,2.19,0,Improving,Medium Risk
+STU1229,Student_229,BCA,4,66,51,77.87,70.92,71.73,72.04,77.99,80.55,74.45,77.57,0,73.17,2.81,0,Stable,Medium Risk
+STU1230,Student_230,Computer Science,5,71,45,63.05,70.24,52.15,67.49,61.58,70.39,81.71,54.89,6,62.86,6.93,2,Improving,High Risk
+STU1231,Student_231,Data Analytics,5,93,91,97.51,96.79,95.61,100.0,96.85,97.73,100.0,98.32,5,97.31,1.63,0,Stable,Low Risk
+STU1232,Student_232,Information Technology,4,90,81,90.19,91.64,81.17,100.0,91.32,82.95,89.1,81.57,8,91.03,6.67,0,Improving,Low Risk
+STU1233,Student_233,Computer Science,6,99,86,86.89,98.52,83.13,84.63,94.89,80.73,100.0,90.28,8,90.29,6.56,0,Declining,Low Risk
+STU1234,Student_234,Information Technology,6,90,68,75.16,82.74,70.61,72.41,77.27,86.65,61.64,75.31,7,75.76,4.71,0,Stable,Low Risk
+STU1235,Student_235,Data Analytics,3,86,53,61.57,60.04,57.22,66.19,65.2,68.4,73.31,72.78,7,62.16,3.69,2,Declining,High Risk
+STU1236,Student_236,BCA,5,74,70,94.59,91.62,100.0,99.5,100.0,87.26,91.62,94.64,7,97.78,3.56,0,Stable,Low Risk
+STU1237,Student_237,BCA,5,60,42,69.68,68.05,69.96,66.47,63.83,63.71,71.05,63.53,6,67.08,2.25,1,Improving,High Risk
+STU1238,Student_238,Data Analytics,4,65,37,57.15,59.7,58.38,54.74,60.93,76.35,95.27,55.18,2,58.44,2.32,4,Stable,High Risk
+STU1239,Student_239,Data Analytics,5,72,50,69.72,69.2,60.84,72.97,68.25,91.9,77.69,58.97,3,67.82,4.4,1,Improving,Medium Risk
+STU1240,Student_240,BCA,6,61,54,89.16,87.19,85.89,84.2,76.58,90.89,84.96,92.41,8,83.46,4.11,0,Declining,Low Risk
+STU1241,Student_241,Computer Science,6,80,65,81.78,89.11,82.85,79.31,71.14,93.49,85.24,86.5,6,80.6,6.49,0,Declining,Low Risk
+STU1242,Student_242,BCA,6,91,79,87.29,86.72,82.16,87.82,82.2,77.51,67.98,100.0,2,84.72,2.57,0,Declining,Low Risk
+STU1243,Student_243,Computer Science,5,99,88,89.13,100.0,93.67,95.1,91.78,87.0,81.42,84.15,9,95.14,3.04,0,Improving,Low Risk
+STU1244,Student_244,BCA,4,80,51,64.11,64.57,58.1,60.49,64.68,66.31,85.1,61.97,10,61.96,2.8,4,Stable,High Risk
+STU1245,Student_245,BCA,6,95,90,94.72,100.0,93.29,83.67,95.64,85.8,85.81,90.12,6,93.15,5.98,0,Improving,Low Risk
+STU1246,Student_246,Computer Science,4,100,74,73.83,75.62,70.9,62.33,83.59,84.4,72.32,75.53,2,73.11,7.7,1,Stable,Medium Risk
+STU1247,Student_247,Information Technology,5,95,78,82.48,87.29,83.3,74.92,76.13,82.93,98.46,85.53,10,80.41,5.1,0,Declining,Medium Risk
+STU1248,Student_248,Data Analytics,4,79,44,55.1,51.48,51.9,47.22,54.96,58.49,83.71,54.67,2,51.39,2.76,4,Stable,High Risk
+STU1249,Student_249,Information Technology,4,73,71,97.71,93.45,96.36,96.79,99.24,78.45,98.91,100.0,4,96.46,2.06,0,Stable,Low Risk
+STU1250,Student_250,Computer Science,3,100,67,67.08,69.38,65.9,59.95,63.4,64.14,72.34,62.14,9,64.66,3.45,2,Improving,High Risk
+STU1251,Student_251,Computer Science,6,69,40,57.67,62.61,54.0,53.45,57.81,74.88,69.32,65.56,5,56.97,3.66,4,Declining,High Risk
+STU1252,Student_252,Data Analytics,3,76,57,74.71,74.91,77.13,70.06,66.71,95.13,73.05,79.01,2,72.2,4.07,0,Declining,Medium Risk
+STU1253,Student_253,Computer Science,3,63,38,60.55,54.12,61.74,57.91,67.6,83.15,63.35,60.45,0,60.34,4.98,3,Stable,High Risk
+STU1254,Student_254,Data Analytics,6,92,57,61.55,54.75,61.11,69.49,58.14,57.53,63.41,59.03,3,60.87,5.46,3,Stable,High Risk
+STU1255,Student_255,BCA,5,86,71,82.19,75.05,80.04,86.16,92.35,93.35,79.02,100.0,7,83.4,6.49,0,Declining,Low Risk
+STU1256,Student_256,Computer Science,4,63,45,71.9,63.06,75.88,71.99,71.73,84.84,69.2,65.36,7,70.67,4.69,1,Improving,Medium Risk
+STU1257,Student_257,BCA,5,69,65,94.64,95.19,93.46,91.87,99.78,75.23,76.41,97.02,2,95.07,2.96,0,Stable,Low Risk
+STU1258,Student_258,Computer Science,4,82,56,68.72,74.35,67.19,66.12,68.46,73.5,79.99,62.72,1,69.03,3.18,0,Improving,Medium Risk
+STU1259,Student_259,Computer Science,3,82,71,86.23,86.16,86.75,88.19,86.07,92.57,89.77,100.0,7,86.79,0.85,0,Declining,Low Risk
+STU1260,Student_260,BCA,5,92,69,74.83,63.53,83.31,78.33,71.91,83.08,98.16,81.92,1,74.27,7.4,1,Declining,Low Risk
+STU1261,Student_261,Information Technology,3,70,58,83.38,82.42,76.68,77.93,83.97,72.05,79.17,77.95,0,80.25,3.03,0,Improving,Medium Risk
+STU1262,Student_262,Computer Science,5,97,78,80.79,79.97,84.64,81.01,82.38,86.24,87.39,84.89,5,82.0,1.75,0,Declining,Low Risk
+STU1263,Student_263,Data Analytics,6,78,59,75.33,85.81,65.86,63.14,71.41,61.8,84.56,77.39,6,71.56,8.75,1,Stable,Medium Risk
+STU1264,Student_264,Information Technology,6,93,89,95.85,88.57,96.94,97.12,95.23,86.35,90.18,91.72,2,94.46,3.48,0,Improving,Low Risk
+STU1265,Student_265,Information Technology,4,69,48,69.74,67.78,77.61,74.31,66.69,85.49,81.64,75.8,2,71.6,4.53,0,Declining,Medium Risk
+STU1266,Student_266,BCA,6,61,38,62.62,71.15,65.06,60.94,74.12,73.33,82.19,65.74,2,67.82,5.14,1,Declining,High Risk
+STU1267,Student_267,Data Analytics,5,62,52,84.16,86.41,85.01,95.06,83.71,78.88,89.56,85.88,3,87.55,4.44,0,Stable,Low Risk
+STU1268,Student_268,Data Analytics,4,75,69,91.38,94.19,88.58,86.09,99.1,93.24,87.7,91.04,0,91.99,5.05,0,Stable,Low Risk
+STU1269,Student_269,BCA,3,99,56,56.73,57.3,56.89,58.04,55.75,78.33,67.63,60.18,0,57.0,0.83,4,Declining,High Risk
+STU1270,Student_270,BCA,4,61,45,74.33,75.98,73.07,74.12,75.63,88.93,67.21,76.17,4,74.7,1.17,0,Stable,Medium Risk
+STU1271,Student_271,Data Analytics,5,75,70,93.38,97.27,89.45,92.78,86.77,94.01,83.3,93.85,0,91.57,3.92,0,Stable,Low Risk
+STU1272,Student_272,Computer Science,6,64,56,87.23,83.19,85.78,86.55,85.0,92.91,81.76,82.11,3,85.13,1.25,0,Improving,Low Risk
+STU1273,Student_273,Computer Science,3,98,96,97.65,100.0,98.64,98.29,98.7,94.8,81.64,100.0,6,98.91,0.65,0,Stable,Low Risk
+STU1274,Student_274,Information Technology,5,87,68,77.85,70.99,74.01,82.94,85.78,82.16,87.22,69.45,0,78.43,6.11,0,Improving,Medium Risk
+STU1275,Student_275,Data Analytics,6,91,76,83.38,85.02,79.35,91.65,84.49,83.24,97.83,86.8,6,85.13,4.37,0,Declining,Low Risk
+STU1276,Student_276,Data Analytics,6,89,61,68.01,68.9,61.21,67.99,74.93,73.7,68.32,65.44,6,68.26,4.87,1,Stable,High Risk
+STU1277,Student_277,Data Analytics,4,86,82,95.74,92.66,97.7,100.0,98.95,78.39,95.49,100.0,6,97.33,2.82,0,Declining,Low Risk
+STU1278,Student_278,Information Technology,3,91,64,70.75,70.64,73.48,66.54,78.89,69.2,81.64,63.52,6,72.39,4.49,0,Improving,High Risk
+STU1279,Student_279,Computer Science,4,60,52,86.76,83.64,87.91,91.35,86.46,81.78,84.67,80.87,8,87.34,2.78,0,Improving,Low Risk
+STU1280,Student_280,Computer Science,6,95,69,72.34,66.98,77.16,67.76,84.29,79.48,72.88,64.58,0,74.05,7.14,0,Improving,Medium Risk
+STU1281,Student_281,Data Analytics,6,90,71,79.16,77.39,79.6,85.7,76.73,92.15,89.56,81.75,1,79.86,3.54,0,Stable,Low Risk
+STU1282,Student_282,Data Analytics,5,90,77,85.95,80.43,87.91,99.21,82.12,80.11500000000001,80.48,74.97,3,87.42,7.35,0,Improving,Low Risk
+STU1283,Student_283,BCA,3,76,58,76.88,78.5,78.4,76.15,70.83,80.11500000000001,92.4,73.06,7,75.97,3.11,0,Improving,Low Risk
+STU1284,Student_284,Data Analytics,3,92,86,94.0,88.25,93.55,80.85,100.0,95.94,89.25,76.79,9,90.66,7.03,0,Improving,Low Risk
+STU1285,Student_285,Data Analytics,4,75,55,73.03,76.59,70.38,69.74,77.13,76.01,73.67,74.95,10,73.46,3.41,0,Stable,Medium Risk
+STU1286,Student_286,Information Technology,5,62,51,82.82,76.92,93.89,90.22,81.15,87.03,73.02,78.82,6,85.54,6.8,0,Improving,Low Risk
+STU1287,Student_287,Computer Science,3,97,68,69.72,66.89,67.46,73.04,75.97,74.43,80.88,57.82,4,70.84,3.81,0,Improving,Medium Risk
+STU1288,Student_288,BCA,5,69,50,72.55,69.43,69.22,74.04,75.99,88.22,88.86,81.24,4,72.17,2.93,0,Declining,Medium Risk
+STU1289,Student_289,BCA,5,64,47,73.92,80.55,76.09,79.97,83.75,83.35,83.39,63.46,0,80.09,2.72,0,Improving,Medium Risk
+STU1290,Student_290,Data Analytics,3,85,51,60.41,62.06,61.67,63.32,52.67,62.66,95.61,66.79,5,59.93,4.24,4,Declining,High Risk
+STU1291,Student_291,Information Technology,3,69,41,58.94,57.89,51.92,66.25,57.62,72.82,86.72,53.34,5,58.42,5.11,3,Improving,High Risk
+STU1292,Student_292,Data Analytics,4,95,80,83.7,86.2,89.32,89.22,81.39,95.85,82.96,96.51,2,86.53,3.22,0,Declining,Low Risk
+STU1293,Student_293,Information Technology,5,78,65,83.19,72.65,82.72,92.32,73.32,80.98,82.57,89.18,8,80.25,8.02,0,Declining,Low Risk
+STU1294,Student_294,Data Analytics,6,60,50,83.51,83.29,77.95,85.66,88.81,86.16,90.62,75.44,8,83.93,3.97,0,Improving,Low Risk
+STU1295,Student_295,BCA,4,99,55,55.85,65.84,61.79,61.28,54.5,74.5,62.34,48.51,3,60.85,4.07,3,Improving,High Risk
+STU1296,Student_296,BCA,4,81,56,69.04,69.7,72.17,67.2,72.74,67.78,89.64,73.89,10,70.45,2.2,0,Declining,Medium Risk
+STU1297,Student_297,Information Technology,6,70,44,63.51,63.85,57.18,59.9,75.3,77.66,78.54,61.41,1,64.06,6.91,3,Stable,High Risk
+STU1298,Student_298,Data Analytics,4,87,77,88.46,91.2,97.35,98.7,86.69,73.66,91.22,87.11,10,93.48,4.84,0,Stable,Low Risk
+STU1299,Student_299,Data Analytics,4,81,75,92.01,96.49,95.3,93.3,89.9,81.4,97.47,100.0,8,93.75,2.5,0,Declining,Low Risk
+STU1300,Student_300,Computer Science,4,61,40,65.61,55.62,65.56,70.44,66.2,83.13,93.31,59.62,2,64.46,5.43,1,Improving,Medium Risk
+STU1301,Student_301,Data Analytics,3,91,76,83.72,75.31,91.67,84.46,88.65,85.53,87.75,84.45,7,85.02,6.16,0,Stable,Low Risk
+STU1302,Student_302,Information Technology,4,76,46,60.56,61.61,61.36,57.04,57.73,69.82,72.18,68.2,3,59.43,2.07,4,Declining,High Risk
+STU1303,Student_303,Computer Science,5,88,59,66.83,63.26,66.69,66.9,63.68,78.65,91.84,73.3,8,65.13,1.67,2,Declining,Medium Risk
+STU1304,Student_304,Information Technology,6,96,59,60.96,67.52,57.66,69.58,66.25,71.95,83.2,59.69,1,65.25,4.54,1,Stable,High Risk
+STU1305,Student_305,BCA,5,85,57,67.19,65.62,70.1,70.52,69.08,75.34,73.75,64.88,2,68.83,1.93,0,Stable,Medium Risk
+STU1306,Student_306,Computer Science,6,87,73,84.01,74.34,86.4,73.74,73.79,88.06,86.26,70.1,3,77.07,5.39,0,Improving,Medium Risk
+STU1307,Student_307,Data Analytics,5,70,66,94.14,87.8,94.22,92.85,88.02,81.55,93.73,85.69,2,90.72,2.85,0,Improving,Low Risk
+STU1308,Student_308,BCA,3,69,44,63.71,49.96,59.76,74.4,71.21,73.99,78.66,66.26,3,63.83,9.68,2,Stable,Medium Risk
+STU1309,Student_309,Data Analytics,4,77,60,78.31,77.14,78.96,77.03,80.32,77.74,69.5,77.21,6,78.36,1.37,0,Stable,Medium Risk
+STU1310,Student_310,Computer Science,6,94,80,85.16,84.22,84.81,74.36,81.35,70.64,71.41,85.76,6,81.18,4.15,0,Stable,Low Risk
+STU1311,Student_311,BCA,3,81,78,95.98,93.85,89.31,100.0,95.12,80.83,83.91,100.0,6,94.57,3.81,0,Declining,Low Risk
+STU1312,Student_312,BCA,6,74,60,81.23,86.63,73.87,85.33,81.3,94.1,75.03,71.73,2,81.78,4.97,0,Improving,Low Risk
+STU1313,Student_313,Computer Science,5,91,60,65.97,71.96,68.8,65.55,69.65,77.76,69.85,64.08,2,68.99,2.3,0,Stable,Medium Risk
+STU1314,Student_314,Data Analytics,4,94,77,81.9,81.04,68.89,79.67,75.1,71.26,91.39,83.41,10,76.18,4.75,0,Stable,Medium Risk
+STU1315,Student_315,Computer Science,6,97,67,68.78,58.11,69.81,75.28,64.58,80.11500000000001,76.14,63.15,2,66.94,6.35,2,Improving,High Risk
+STU1316,Student_316,BCA,6,72,70,96.97,100.0,94.58,93.72,98.34,87.74,95.3,100.0,1,96.66,2.6,0,Declining,Low Risk
+STU1317,Student_317,BCA,3,89,64,72.19,74.96,78.73,79.08,71.69,89.97,67.46,79.45,4,76.11,3.02,0,Declining,Medium Risk
+STU1318,Student_318,BCA,3,84,71,84.47,86.02,82.01,87.73,87.33,81.52,81.84,86.79,0,85.77,2.26,0,Stable,Low Risk
+STU1319,Student_319,Information Technology,5,78,44,56.0,60.91,59.3,57.47,49.85,80.66,76.67,70.35,3,56.88,4.24,4,Declining,High Risk
+STU1320,Student_320,Information Technology,6,76,55,72.2,66.38,70.22,73.08,73.99,80.31,85.66,60.21,9,70.92,2.97,0,Improving,High Risk
+STU1321,Student_321,Data Analytics,3,64,59,92.63,100.0,93.2,91.58,98.09,90.45,83.7,92.57,2,95.72,3.44,0,Stable,Low Risk
+STU1322,Student_322,Computer Science,5,71,58,81.24,76.44,84.92,87.51,83.67,70.87,86.3,84.17,7,83.14,4.11,0,Stable,Medium Risk
+STU1323,Student_323,BCA,3,82,61,74.09,77.84,71.78,68.9,74.79,85.84,100.0,66.77,5,73.33,3.34,0,Improving,Medium Risk
+STU1324,Student_324,Information Technology,5,96,91,95.25,86.81,100.0,85.51,94.77,85.18,92.21,97.65,3,91.77,5.93,0,Stable,Low Risk
+STU1325,Student_325,Information Technology,5,95,87,91.72,87.07,86.75,95.41,87.55,93.18,83.51,82.87,7,89.2,3.6,0,Improving,Low Risk
+STU1326,Student_326,Computer Science,3,67,46,68.86,76.44,70.33,72.64,68.5,69.47,76.13,74.38,6,71.98,2.96,0,Declining,High Risk
+STU1327,Student_327,Computer Science,5,87,68,78.42,77.11,83.03,81.3,84.71,81.7,84.05,86.88,3,81.54,2.83,0,Declining,Medium Risk
+STU1328,Student_328,Computer Science,6,63,48,76.06,80.26,79.36,78.51,75.47,82.04,80.32,78.24,2,78.4,1.8,0,Stable,Low Risk
+STU1329,Student_329,Computer Science,6,87,72,82.18,83.37,91.77,80.26,77.74,80.75,84.89,67.36,10,83.28,5.29,0,Improving,Low Risk
+STU1330,Student_330,BCA,3,74,51,69.37,68.84,65.55,74.09,66.91,79.45,63.72,61.63,1,68.85,3.24,0,Improving,Medium Risk
+STU1331,Student_331,BCA,3,78,51,65.5,72.32,58.61,65.23,66.51,72.34,66.4,70.02,10,65.67,4.87,1,Declining,High Risk
+STU1332,Student_332,Data Analytics,3,89,84,94.24,93.06,89.27,91.32,92.38,82.22,90.34,94.41,5,91.51,1.43,0,Stable,Low Risk
+STU1333,Student_333,Data Analytics,4,77,73,94.73,85.82,98.03,92.86,97.15,100.0,90.45,73.17,10,93.46,4.83,0,Improving,Low Risk
+STU1334,Student_334,Information Technology,3,93,85,91.26,87.25,93.75,100.0,93.88,94.46,84.53,100.0,3,93.72,4.51,0,Declining,Low Risk
+STU1335,Student_335,Data Analytics,6,81,79,97.06,99.82,97.57,86.65,100.0,82.59,91.61,98.16,6,96.01,5.49,0,Stable,Low Risk
+STU1336,Student_336,Information Technology,6,100,87,87.03,89.01,81.42,90.03,94.15,88.71,88.48,80.48,6,88.65,4.6,0,Improving,Low Risk
+STU1337,Student_337,Information Technology,6,86,76,87.88,80.05,91.72,77.81,92.86,80.11500000000001,97.23,95.84,3,85.61,6.74,0,Declining,Low Risk
+STU1338,Student_338,Data Analytics,3,72,63,87.79,84.17,81.67,87.14,83.12,75.03,87.29,82.37,2,84.02,2.01,0,Improving,Low Risk
+STU1339,Student_339,Computer Science,3,91,69,75.67,72.76,81.46,73.06,71.15,87.32,85.61,70.16,5,74.61,4.02,0,Improving,Medium Risk
+STU1340,Student_340,Information Technology,6,76,57,74.63,72.8,88.91,62.12,74.25,64.95,75.63,77.49,7,74.52,9.54,1,Stable,Medium Risk
+STU1341,Student_341,BCA,4,81,53,65.33,58.45,67.16,67.66,63.07,81.81,81.65,79.58,2,64.08,3.71,2,Declining,High Risk
+STU1342,Student_342,Data Analytics,5,65,54,82.73,79.59,85.64,80.45,77.04,80.21,89.26,95.72,8,80.68,3.13,0,Declining,Low Risk
+STU1343,Student_343,BCA,6,64,43,67.44,63.8,64.98,54.85,65.23,73.66,85.75,70.32,7,62.22,4.29,3,Stable,Medium Risk
+STU1344,Student_344,BCA,3,83,55,66.09,69.94,57.03,71.12,63.71,78.02,83.48,69.78,1,65.45,5.62,2,Declining,Medium Risk
+STU1345,Student_345,Information Technology,3,67,54,80.2,84.24,77.18,88.81,76.84,85.74,90.0,86.53,10,81.77,5.03,0,Declining,Low Risk
+STU1346,Student_346,Data Analytics,3,100,73,72.63,71.9,67.16,81.57,71.05,71.07,78.96,62.57,0,72.92,5.3,0,Improving,Medium Risk
+STU1347,Student_347,Information Technology,3,95,61,64.41,62.45,57.18,66.56,70.3,79.73,77.88,69.56,7,64.12,4.88,2,Declining,High Risk
+STU1348,Student_348,Information Technology,3,88,79,90.09,90.79,98.7,90.37,91.09,86.45,100.0,84.22,4,92.74,3.45,0,Improving,Low Risk
+STU1349,Student_349,Computer Science,6,90,83,92.0,87.92,93.37,99.97,100.0,76.35,84.08,94.55,7,95.32,5.05,0,Stable,Low Risk
+STU1350,Student_350,Computer Science,5,84,52,62.21,56.48,64.11,72.31,63.06,71.64,67.93,60.39,8,63.99,5.62,3,Stable,High Risk
+STU1351,Student_351,BCA,6,62,34,55.32,50.62,53.78,62.12,53.87,80.95,72.24,59.33,7,55.1,4.26,4,Declining,High Risk
+STU1352,Student_352,Computer Science,6,76,53,69.45,66.28,68.59,63.8,69.47,89.67,82.35,70.4,7,67.04,2.2,1,Stable,Medium Risk
+STU1353,Student_353,Data Analytics,6,80,71,89.29,83.48,94.12,90.5,90.58,90.92,80.87,64.71,9,89.67,3.86,0,Improving,Low Risk
+STU1354,Student_354,Data Analytics,3,97,88,91.08,91.89,90.92,93.72,93.26,76.47,89.35,92.52,7,92.45,1.11,0,Stable,Low Risk
+STU1355,Student_355,Information Technology,4,68,41,60.95,64.6,63.6,50.09,71.33,76.35,72.58,66.09,8,62.4,7.71,3,Declining,High Risk
+STU1356,Student_356,Information Technology,6,80,71,88.3,80.36,87.32,91.11,84.07,91.54,66.41,91.86,4,85.72,3.97,0,Declining,Low Risk
+STU1357,Student_357,Computer Science,3,74,44,59.98,60.1,58.26,73.61,64.27,77.79,70.79,59.15,2,64.06,5.93,3,Stable,High Risk
+STU1358,Student_358,Information Technology,3,65,47,71.77,70.67,64.74,75.61,72.81,83.58,77.9,84.91,2,70.96,3.99,1,Declining,Medium Risk
+STU1359,Student_359,Computer Science,5,64,63,97.94,99.65,88.05,100.0,90.08,91.98,92.26,100.0,6,94.44,5.43,0,Stable,Low Risk
+STU1360,Student_360,BCA,6,74,47,63.28,63.22,61.97,64.38,67.13,72.9,88.96,66.78,5,64.18,1.91,3,Declining,Medium Risk
+STU1361,Student_361,Information Technology,6,63,39,61.62,54.35,61.9,61.18,67.96,67.86,61.73,69.98,0,61.35,4.82,3,Declining,High Risk
+STU1362,Student_362,Information Technology,6,62,45,73.18,66.87,66.75,75.47,68.89,62.75,72.0,76.08,2,69.5,3.55,0,Stable,Medium Risk
+STU1363,Student_363,Computer Science,3,74,60,81.65,81.79,81.47,76.75,81.6,84.46,58.78,74.46,10,80.4,2.11,0,Improving,Medium Risk
+STU1364,Student_364,Information Technology,6,68,65,95.11,100.0,95.38,89.33,86.49,89.29,87.5,75.61,7,92.8,5.25,0,Improving,Low Risk
+STU1365,Student_365,Computer Science,6,82,80,97.18,86.1,86.4,100.0,90.88,93.19,89.49,93.36,8,90.84,5.61,0,Improving,Low Risk
+STU1366,Student_366,BCA,5,60,35,57.99,59.72,53.42,66.23,63.23,60.4,66.8,64.08,2,60.65,4.77,3,Declining,High Risk
+STU1367,Student_367,Data Analytics,6,72,44,60.93,66.88,62.97,54.99,58.6,77.58,84.59,58.11,0,60.86,4.48,3,Stable,High Risk
+STU1368,Student_368,Data Analytics,6,78,69,89.0,88.24,90.94,94.81,83.46,100.0,97.56,95.41,3,89.36,4.13,0,Declining,Low Risk
+STU1369,Student_369,Computer Science,4,99,66,66.64,69.39,60.87,66.12,67.78,75.61,77.43,67.83,9,66.04,3.2,1,Stable,Medium Risk
+STU1370,Student_370,Information Technology,3,86,80,93.05,89.53,93.84,95.09,90.44,86.38,87.47,100.0,5,92.22,2.31,0,Declining,Low Risk
+STU1371,Student_371,Data Analytics,4,96,80,83.53,82.93,88.64,86.29,81.17,85.06,96.2,81.17,8,84.76,2.9,0,Stable,Low Risk
+STU1372,Student_372,BCA,3,74,44,59.81,51.7,63.69,65.78,63.51,88.17,72.7,63.55,5,61.17,5.54,3,Declining,High Risk
+STU1373,Student_373,Data Analytics,3,78,71,90.8,79.08,90.32,91.3,84.99,77.67,81.76,94.85,5,86.42,4.87,0,Declining,Low Risk
+STU1374,Student_374,Data Analytics,3,77,48,62.58,67.3,60.24,71.04,58.06,74.79,57.26,74.6,6,64.16,5.24,2,Declining,Medium Risk
+STU1375,Student_375,Information Technology,5,96,70,73.21,68.29,70.06,75.07,73.98,71.55,75.85,59.56,10,71.85,2.77,0,Improving,High Risk
+STU1376,Student_376,Computer Science,5,99,78,78.74,76.47,81.08,82.49,83.59,76.06,90.86,75.08,4,80.91,2.71,0,Improving,Low Risk
+STU1377,Student_377,BCA,5,99,76,76.53,69.6,77.51,71.53,82.72,79.04,100.0,83.32,6,75.34,5.16,0,Declining,Low Risk
+STU1378,Student_378,BCA,5,90,76,84.51,77.46,87.65,97.46,81.18,93.81,87.09,96.87,10,85.94,7.59,0,Declining,Low Risk
+STU1379,Student_379,Data Analytics,5,80,66,83.07,82.2,83.72,85.88,87.75,96.79,78.03,84.99,4,84.89,2.11,0,Stable,Low Risk
+STU1380,Student_380,Data Analytics,5,82,80,97.66,94.01,100.0,100.0,93.74,92.53,81.86,95.32,9,96.94,3.06,0,Stable,Low Risk
+STU1381,Student_381,Computer Science,3,100,98,97.98,99.86,98.45,88.33,100.0,86.08,99.41,100.0,5,96.66,4.85,0,Stable,Low Risk
+STU1382,Student_382,Information Technology,6,71,55,77.21,79.47,81.13,72.27,71.54,99.69,64.82,84.16,9,76.1,4.25,0,Declining,Medium Risk
+STU1383,Student_383,Information Technology,4,74,44,59.09,60.7,63.45,66.52,65.74,68.17,78.0,56.22,5,64.1,2.27,2,Stable,High Risk
+STU1384,Student_384,Computer Science,3,96,83,86.3,87.49,82.27,88.02,83.01,79.26,95.64,88.94,6,85.2,2.58,0,Stable,Low Risk
+STU1385,Student_385,Computer Science,6,75,73,97.0,100.0,87.96,85.51,100.0,74.45,97.71,100.0,3,93.37,6.69,0,Declining,Low Risk
+STU1386,Student_386,Computer Science,5,69,47,68.69,63.35,76.41,74.92,71.64,87.08,75.58,83.81,6,71.58,5.06,1,Declining,Medium Risk
+STU1387,Student_387,Computer Science,3,82,61,74.83,74.56,76.12,71.57,69.75,86.42,86.81,80.77,3,73.0,2.49,0,Declining,Low Risk
+STU1388,Student_388,Information Technology,3,73,53,73.27,78.93,64.69,81.73,70.65,97.31,82.01,73.62,6,74.0,6.74,1,Stable,Medium Risk
+STU1389,Student_389,Information Technology,3,96,55,57.21,63.53,53.64,56.68,61.12,59.63,63.68,56.78,8,58.74,3.84,4,Stable,High Risk
+STU1390,Student_390,Computer Science,4,97,81,83.91,76.8,87.77,85.14,89.17,94.42,100.0,88.37,4,84.72,4.8,0,Declining,Low Risk
+STU1391,Student_391,BCA,3,72,51,70.19,68.63,68.8,77.27,69.84,77.15,75.09,69.27,4,71.13,3.57,0,Stable,Medium Risk
+STU1392,Student_392,Computer Science,5,81,72,88.86,95.65,86.3,83.48,89.08,91.44,96.63,90.38,3,88.63,4.51,0,Stable,Low Risk
+STU1393,Student_393,Data Analytics,5,100,91,90.78,93.32,97.79,84.82,94.57,72.67,65.74,82.32,8,92.62,4.79,0,Improving,Low Risk
+STU1394,Student_394,BCA,6,90,81,90.31,91.29,85.08,89.13,90.97,97.39,100.0,100.0,6,89.12,2.47,0,Declining,Low Risk
+STU1395,Student_395,BCA,5,68,50,72.92,71.83,68.93,77.88,66.45,84.1,94.79,63.8,5,71.27,4.26,0,Improving,Medium Risk
+STU1396,Student_396,Information Technology,5,84,58,68.83,66.91,69.88,60.84,64.76,75.66,78.15,65.37,0,65.6,3.29,2,Improving,High Risk
+STU1397,Student_397,Computer Science,5,85,74,87.2,88.64,89.15,77.19,88.37,89.4,93.55,87.98,1,85.84,5.0,0,Stable,Low Risk
+STU1398,Student_398,Computer Science,3,86,77,89.46,88.2,91.94,94.4,95.54,79.13,94.79,100.0,0,92.52,2.81,0,Declining,Low Risk
+STU1399,Student_399,Data Analytics,3,61,46,76.12,75.91,80.68,72.51,84.2,74.62,75.44,72.74,9,78.32,4.46,0,Improving,Medium Risk
+STU1400,Student_400,Data Analytics,5,72,67,93.4,93.79,94.39,91.05,97.3,83.32,96.84,88.07,9,94.13,2.22,0,Improving,Low Risk
+STU1401,Student_401,Information Technology,3,95,58,61.19,57.8,63.63,50.05,62.62,57.71,65.57,56.78,0,58.53,5.37,4,Improving,High Risk
+STU1402,Student_402,Information Technology,3,69,64,92.8,95.46,91.5,88.73,96.54,93.65,84.95,100.0,0,93.06,3.12,0,Declining,Low Risk
+STU1403,Student_403,Data Analytics,3,72,43,59.13,73.7,59.45,59.09,55.8,81.14,83.79,40.0,8,62.01,6.9,3,Improving,High Risk
+STU1404,Student_404,Information Technology,6,73,45,61.6,52.72,62.14,67.18,60.84,67.11,83.63,53.58,5,60.72,5.19,3,Improving,High Risk
+STU1405,Student_405,Data Analytics,4,67,52,77.96,79.58,79.03,73.33,73.83,82.87,75.81,99.81,3,76.44,2.87,0,Declining,Low Risk
+STU1406,Student_406,BCA,5,66,38,57.9,54.1,61.77,67.85,51.66,68.93,64.51,62.63,6,58.84,6.4,3,Declining,High Risk
+STU1407,Student_407,Data Analytics,4,74,42,57.27,60.16,60.05,53.16,58.94,73.4,65.04,48.42,2,58.08,2.88,4,Improving,High Risk
+STU1408,Student_408,Computer Science,3,95,52,55.02,55.26,55.24,50.92,55.95,64.74,77.59,54.69,2,54.34,2.0,4,Stable,High Risk
+STU1409,Student_409,Information Technology,4,60,44,73.76,77.57,69.72,82.99,77.2,71.13,70.57,74.3,4,76.87,4.72,0,Stable,Low Risk
+STU1410,Student_410,Computer Science,3,71,63,88.31,94.19,88.65,89.58,91.04,93.16,92.14,95.08,9,90.86,2.1,0,Declining,Low Risk
+STU1411,Student_411,Computer Science,6,62,35,56.5,57.46,56.36,53.19,57.71,69.91,78.54,71.21,8,56.18,1.8,4,Declining,High Risk
+STU1412,Student_412,Computer Science,3,83,69,83.05,88.71,84.01,82.12,85.83,98.55,84.79,86.16,2,85.17,2.43,0,Declining,Low Risk
+STU1413,Student_413,Data Analytics,4,70,63,90.39,78.67,100.0,98.51,90.18,86.05,99.82,86.08,6,91.84,8.47,0,Improving,Low Risk
+STU1414,Student_414,Computer Science,6,92,57,62.22,70.18,59.61,71.02,64.29,65.59,71.18,68.52,9,66.28,4.64,2,Declining,High Risk
+STU1415,Student_415,Computer Science,5,83,51,61.32,63.19,63.43,56.41,57.68,82.41,71.58,55.73,10,60.18,3.17,4,Improving,High Risk
+STU1416,Student_416,BCA,4,92,85,92.01,97.4,97.36,91.76,93.86,91.45,80.84,83.75,8,95.1,2.4,0,Improving,Low Risk
+STU1417,Student_417,Information Technology,5,86,78,90.39,84.29,90.88,90.94,93.74,91.49,99.89,76.32,1,89.96,3.47,0,Improving,Low Risk
+STU1418,Student_418,Computer Science,6,77,60,78.17,74.02,89.86,72.26,74.83,89.7,75.33,65.65,2,77.74,7.06,0,Improving,Medium Risk
+STU1419,Student_419,Data Analytics,4,95,86,90.23,90.96,88.34,89.89,90.48,80.38,93.12,83.05,2,89.92,0.99,0,Improving,Low Risk
+STU1420,Student_420,BCA,5,79,47,58.99,58.9,60.61,59.02,55.87,70.53,71.73,49.57,1,58.6,1.71,4,Improving,High Risk
+STU1421,Student_421,Information Technology,6,98,71,71.96,73.38,67.97,78.8,69.33,76.01,69.05,74.47,1,72.37,4.21,0,Stable,Medium Risk
+STU1422,Student_422,BCA,5,100,87,86.73,92.15,84.97,93.97,81.1,73.7,81.61,77.13,3,88.05,5.24,0,Improving,Low Risk
+STU1423,Student_423,Information Technology,4,84,55,66.07,57.24,67.32,64.1,72.4,72.62,90.17,40.92,6,65.26,5.5,2,Improving,High Risk
+STU1424,Student_424,BCA,3,87,76,87.35,92.22,91.58,86.07,92.68,95.0,90.06,79.0,4,90.64,2.67,0,Improving,Low Risk
+STU1425,Student_425,Data Analytics,3,70,54,76.68,76.72,78.28,80.67,79.37,81.4,72.08,72.9,4,78.76,1.45,0,Improving,Low Risk
+STU1426,Student_426,Computer Science,6,93,81,87.26,86.24,93.56,83.75,97.12,73.5,91.05,82.42,2,90.17,5.4,0,Improving,Low Risk
+STU1427,Student_427,Information Technology,5,87,65,74.98,67.63,74.51,78.51,74.03,66.29,79.78,87.14,1,73.67,3.9,0,Declining,Medium Risk
+STU1428,Student_428,Information Technology,4,97,69,70.82,73.34,69.16,70.29,85.98,90.19,100.0,65.91,10,74.69,6.69,0,Improving,Medium Risk
+STU1429,Student_429,Computer Science,4,70,45,64.43,52.35,77.95,58.61,63.29,73.27,78.29,71.47,6,63.05,9.44,3,Declining,High Risk
+STU1430,Student_430,BCA,5,92,59,63.96,67.2,65.93,58.22,65.24,68.6,71.37,63.81,2,64.15,3.49,1,Stable,Medium Risk
+STU1431,Student_431,Computer Science,5,79,69,87.31,79.85,83.72,96.0,85.33,82.1,100.0,86.98,8,86.22,5.98,0,Stable,Low Risk
+STU1432,Student_432,BCA,5,67,40,60.11,60.38,56.64,59.17,61.97,60.23,54.65,53.43,9,59.54,1.95,4,Improving,High Risk
+STU1433,Student_433,Information Technology,4,67,39,58.7,58.1,53.98,68.54,62.88,82.8,73.23,58.23,10,60.88,5.43,3,Stable,High Risk
+STU1434,Student_434,Computer Science,5,83,52,62.58,68.43,67.26,59.5,62.01,70.02,94.36,56.46,1,64.3,3.68,2,Improving,High Risk
+STU1435,Student_435,Data Analytics,4,73,46,62.54,61.65,60.72,64.29,71.42,84.08,73.23,63.9,7,64.52,4.19,3,Stable,High Risk
+STU1436,Student_436,Computer Science,6,64,58,90.39,86.92,91.03,100.0,91.59,86.09,72.38,88.5,10,92.38,4.75,0,Stable,Low Risk
+STU1437,Student_437,BCA,3,77,56,72.14,69.6,71.82,65.79,73.49,88.9,75.72,64.58,8,70.18,2.88,0,Improving,Medium Risk
+STU1438,Student_438,Information Technology,3,86,84,97.59,100.0,100.0,86.2,93.04,90.97,100.0,100.0,2,94.81,5.73,0,Stable,Low Risk
+STU1439,Student_439,Computer Science,4,73,44,60.9,63.58,56.67,68.62,62.99,79.23,77.26,64.31,9,62.96,4.24,3,Declining,High Risk
+STU1440,Student_440,Data Analytics,5,99,82,83.1,81.17,77.72,78.14,82.43,88.15,77.32,79.52,4,79.86,1.99,0,Improving,Low Risk
+STU1441,Student_441,Information Technology,5,91,68,74.3,73.11,75.42,74.17,71.25,83.42,74.01,75.46,5,73.49,1.53,0,Stable,Medium Risk
+STU1442,Student_442,Data Analytics,4,81,58,71.9,64.06,74.9,68.38,68.01,80.14,73.95,71.22,6,68.84,3.89,1,Stable,High Risk
+STU1443,Student_443,Computer Science,6,98,91,92.63,94.57,94.29,94.24,100.0,84.82,81.64,85.69,8,95.78,2.44,0,Improving,Low Risk
+STU1444,Student_444,Data Analytics,4,77,75,96.95,88.15,92.9,91.25,95.63,100.0,100.0,97.51,1,91.98,2.71,0,Stable,Low Risk
+STU1445,Student_445,BCA,3,65,60,92.53,96.29,95.92,91.45,85.25,79.38,100.0,87.56,5,92.23,4.46,0,Improving,Low Risk
+STU1446,Student_446,BCA,3,61,39,63.27,63.91,59.55,65.97,59.78,73.51,79.36,55.71,8,62.3,2.74,3,Improving,High Risk
+STU1447,Student_447,Data Analytics,6,98,63,64.49,76.43,61.89,58.44,64.24,74.14,62.16,51.51,6,65.25,6.78,3,Improving,High Risk
+STU1448,Student_448,Information Technology,3,99,82,83.21,77.71,78.49,79.01,85.94,85.66,72.49,80.34,3,80.29,3.3,0,Stable,Medium Risk
+STU1449,Student_449,BCA,6,90,61,67.43,66.92,73.94,65.35,70.2,71.91,82.42,71.97,0,69.1,3.3,0,Declining,Medium Risk
+STU1450,Student_450,Data Analytics,4,64,55,86.59,95.58,89.76,78.02,89.98,80.11500000000001,74.17,81.04,6,88.34,6.4,0,Improving,Low Risk
+STU1451,Student_451,Information Technology,3,72,57,79.36,85.31,82.38,76.82,76.13,79.36,81.64,99.52,7,80.16,3.84,0,Declining,Low Risk
+STU1452,Student_452,Information Technology,4,61,48,78.69,75.21,84.93,79.4,80.39,67.75,86.32,85.77,6,79.98,3.46,0,Declining,Medium Risk
+STU1453,Student_453,Data Analytics,5,62,56,90.63,91.75,100.0,88.23,86.25,85.86,78.47,100.0,10,91.56,5.26,0,Declining,Low Risk
+STU1454,Student_454,Computer Science,4,70,60,85.55,85.56,77.01,83.92,82.45,74.69,76.81,91.91,6,82.24,3.21,0,Declining,Low Risk
+STU1455,Student_455,BCA,6,83,47,56.14,57.55,52.45,56.02,51.55,56.39,69.94,70.97,5,54.39,2.47,4,Declining,High Risk
+STU1456,Student_456,BCA,5,62,35,57.13,53.63,54.05,53.19,51.18,80.11500000000001,76.46,50.83,0,53.01,1.1,4,Improving,High Risk
+STU1457,Student_457,Computer Science,4,100,81,80.87,80.42,76.61,85.01,86.19,85.29,95.09,60.38,6,82.06,3.81,0,Improving,Low Risk
+STU1458,Student_458,BCA,5,78,59,75.91,67.92,70.52,84.52,79.35,83.37,87.82,72.34,1,75.58,6.68,0,Improving,Medium Risk
+STU1459,Student_459,Information Technology,6,70,46,66.19,66.86,64.69,63.4,71.07,79.32,77.14,70.65,7,66.5,2.91,2,Declining,High Risk
+STU1460,Student_460,Computer Science,4,81,59,73.0,75.25,66.92,75.91,73.2,62.39,72.69,74.21,1,72.82,3.55,0,Stable,Medium Risk
+STU1461,Student_461,BCA,3,92,81,87.59,86.45,89.27,86.15,91.47,73.53,77.47,89.79,9,88.34,2.18,0,Stable,Low Risk
+STU1462,Student_462,Computer Science,4,72,65,90.54,82.47,90.8,92.74,81.74,100.0,84.69,100.0,3,86.94,4.89,0,Declining,Low Risk
+STU1463,Student_463,BCA,6,61,48,79.13,84.08,81.54,88.53,83.45,72.23,87.62,82.19,4,84.4,2.56,0,Declining,Low Risk
+STU1464,Student_464,Data Analytics,3,62,44,71.57,73.39,74.11,74.62,72.46,82.09,82.73,77.96,1,73.64,0.81,0,Declining,Medium Risk
+STU1465,Student_465,Computer Science,6,94,63,66.64,63.01,69.65,56.0,69.78,69.49,55.65,59.12,2,64.61,5.68,2,Improving,High Risk
+STU1466,Student_466,Information Technology,5,64,50,77.44,76.04,75.58,80.17,79.34,80.49,74.74,68.68,10,77.78,2.0,0,Improving,Medium Risk
+STU1467,Student_467,Computer Science,5,86,59,68.53,61.03,79.14,75.93,63.6,70.77,89.74,81.45,3,69.93,7.75,2,Declining,Medium Risk
+STU1468,Student_468,BCA,4,75,59,79.26,74.13,80.43,77.93,71.77,85.16,84.38,80.06,5,76.06,3.34,0,Stable,Low Risk
+STU1469,Student_469,Computer Science,6,91,77,84.1,81.41,74.78,90.07,80.54,83.94,72.08,79.11,10,81.7,5.46,0,Improving,Low Risk
+STU1470,Student_470,Information Technology,3,62,36,57.84,63.98,52.83,53.7,60.67,67.44,95.37,52.87,6,57.8,4.69,4,Improving,High Risk
+STU1471,Student_471,BCA,4,96,53,55.05,51.85,46.34,46.13,58.5,61.37,69.99,49.85,0,50.7,5.05,4,Improving,High Risk
+STU1472,Student_472,Information Technology,4,88,56,64.13,67.33,64.21,64.97,57.29,76.0,79.11,58.46,3,63.45,3.74,3,Improving,High Risk
+STU1473,Student_473,Data Analytics,4,78,73,93.46,90.77,92.85,82.93,88.56,77.36,95.4,83.2,4,88.78,3.7,0,Improving,Low Risk
+STU1474,Student_474,Data Analytics,4,68,56,82.79,84.03,80.45,81.35,79.17,85.68,81.86,70.79,3,81.25,1.78,0,Improving,Medium Risk
+STU1475,Student_475,BCA,3,100,62,62.39,61.69,72.45,70.12,60.61,94.09,67.04,60.83,2,66.22,5.15,2,Stable,High Risk
+STU1476,Student_476,Information Technology,3,72,67,93.28,97.65,96.03,81.82,86.47,97.78,100.0,88.54,5,90.49,6.58,0,Improving,Low Risk
+STU1477,Student_477,Information Technology,3,80,60,75.21,72.53,78.84,67.53,68.1,84.59,91.4,84.07,4,71.75,4.53,0,Declining,Medium Risk
+STU1478,Student_478,Computer Science,5,76,57,75.47,67.61,70.82,69.28,71.36,78.28,89.73,77.82,3,69.77,1.46,0,Stable,Medium Risk
+STU1479,Student_479,BCA,4,69,66,95.23,88.32,90.23,94.85,95.66,72.34,98.14,97.35,4,92.26,3.08,0,Stable,Low Risk
+STU1480,Student_480,Computer Science,5,77,44,57.56,54.9,57.74,55.36,51.65,60.32,61.62,51.61,3,54.91,2.17,4,Improving,High Risk
+STU1481,Student_481,Data Analytics,5,66,42,64.25,58.01,65.12,72.65,63.67,84.18,88.11,63.28,2,64.86,5.22,2,Stable,High Risk
+STU1482,Student_482,Information Technology,5,60,48,80.19,82.24,70.91,85.91,85.48,74.77,75.67,83.08,4,81.13,6.07,0,Stable,Low Risk
+STU1483,Student_483,Data Analytics,5,71,45,63.41,61.08,62.5,66.38,56.9,67.94,77.71,69.14,10,61.72,3.39,3,Declining,High Risk
+STU1484,Student_484,Information Technology,5,64,54,84.22,96.09,84.29,85.09,83.19,81.57,69.93,83.47,5,87.16,5.2,0,Stable,Low Risk
+STU1485,Student_485,Data Analytics,5,77,49,64.21,55.52,63.13,66.57,69.33,65.4,54.9,72.84,6,63.64,5.18,2,Declining,High Risk
+STU1486,Student_486,Computer Science,5,95,56,59.26,60.28,55.2,54.09,57.17,61.85,75.78,59.33,10,56.68,2.35,4,Stable,High Risk
+STU1487,Student_487,Data Analytics,5,66,42,63.9,58.26,61.2,69.04,61.03,73.35,67.05,70.24,6,62.38,4.02,3,Declining,High Risk
+STU1488,Student_488,BCA,4,60,44,73.18,70.71,72.29,66.51,79.0,70.8,60.36,69.26,2,72.13,4.5,0,Improving,Medium Risk
+STU1489,Student_489,Information Technology,3,64,40,62.57,63.28,63.03,67.59,61.04,67.23,79.82,48.07,4,63.74,2.39,3,Improving,High Risk
+STU1490,Student_490,BCA,6,80,49,60.79,49.16,63.82,67.91,66.31,66.11,94.64,62.94,5,61.8,7.44,2,Stable,High Risk
+STU1491,Student_491,Information Technology,4,71,65,91.99,93.18,97.4,93.26,94.14,90.58,100.0,97.79,5,94.5,1.72,0,Declining,Low Risk
+STU1492,Student_492,Information Technology,5,80,55,68.78,78.29,67.31,67.72,67.06,74.09,75.25,73.38,1,70.1,4.74,0,Declining,Medium Risk
+STU1493,Student_493,Information Technology,3,61,43,70.51,68.25,68.23,72.91,72.91,75.3,78.87,73.89,1,70.58,2.34,0,Declining,Medium Risk
+STU1494,Student_494,BCA,4,73,42,57.38,58.68,59.56,40.21,58.98,75.6,80.43,54.59,3,54.36,8.17,4,Stable,High Risk
+STU1495,Student_495,Data Analytics,5,76,53,70.37,75.49,73.42,72.18,75.47,75.53,89.92,63.91,10,74.14,1.41,0,Improving,Medium Risk
+STU1496,Student_496,Data Analytics,5,77,51,66.39,65.57,64.22,65.71,63.64,72.65,73.08,70.8,7,64.78,0.88,2,Declining,High Risk
+STU1497,Student_497,Computer Science,5,82,67,81.25,78.35,85.2,80.95,81.46,85.33,85.03,84.66,9,81.49,2.45,0,Declining,Low Risk
+STU1498,Student_498,Data Analytics,4,92,59,63.83,52.45,68.73,68.07,63.52,79.07,78.11,59.34,1,63.19,6.52,2,Improving,Medium Risk
+STU1499,Student_499,Information Technology,6,79,74,93.2,96.4,99.66,92.75,96.72,85.76,96.8,100.0,4,96.38,2.45,0,Declining,Low Risk
+STU1500,Student_500,Data Analytics,5,94,89,94.98,94.41,100.0,88.13,89.85,88.38,90.91,87.91,6,93.1,4.6,0,Improving,Low Risk

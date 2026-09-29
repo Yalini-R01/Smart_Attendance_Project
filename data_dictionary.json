@@ -1,0 +1,16 @@
+{
+  "Student_ID": "Unique student identifier",
+  "Department": "Academic department",
+  "Semester": "Current semester (3-6)",
+  "Attendance_Percentage": "Overall attendance percentage",
+  "Math_Attendance / Python_Attendance / DBMS_Attendance / AI_Attendance": "Subject-wise attendance percentage",
+  "Internal_Marks": "Internal exam performance percentage",
+  "Assignment_Percentage": "Assignment completion/performance percentage",
+  "Previous_Attendance": "Attendance percentage in the prior term",
+  "Medical_Leave": "Number of medical leave days taken",
+  "Average_Subject_Attendance": "Mean of the four subject attendance columns",
+  "Attendance_Consistency": "Std. deviation of subject attendance (higher = more erratic)",
+  "At_Risk_Subject_Count": "Count of subjects below 65% attendance",
+  "Attendance_Trend": "Improving / Stable / Declining vs. previous term",
+  "Risk_Category": "Target label: Low Risk / Medium Risk / High Risk"
+}

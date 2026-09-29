@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance AI</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background: #f1f5f9; color: #1e293b; }
+
+        .header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+            color: white; padding: 25px 7%;
+            display: flex; justify-content: space-between; align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            flex-wrap: wrap; gap: 15px;
+        }
+        .brand { display: flex; align-items: center; gap: 14px; }
+        .brand-icon {
+            width: 48px; height: 48px; background: rgba(255,255,255,0.15);
+            border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 25px;
+        }
+        .brand h1 { font-size: 22px; margin-bottom: 4px; }
+        .brand p { font-size: 13px; opacity: 0.8; }
+        .header-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+        .status { background: rgba(255,255,255,0.15); padding: 9px 15px; border-radius: 30px; font-size: 13px; }
+        .nav-link {
+            color: white; text-decoration: none; font-size: 13px; font-weight: bold;
+            background: rgba(255,255,255,0.12); padding: 9px 15px; border-radius: 30px;
+            transition: 0.2s;
+        }
+        .nav-link:hover { background: rgba(255,255,255,0.22); }
+
+        .flash-wrap { width: 90%; max-width: 1100px; margin: 20px auto 0; }
+        .flash {
+            padding: 14px 18px; border-radius: 10px; margin-bottom: 10px;
+            font-size: 14px; border: 1px solid transparent;
+        }
+        .flash-error { background: #fef2f2; color: #b91c1c; border-color: #fecaca; }
+        .flash-success { background: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
+
+        .hero {
+            width: 90%; max-width: 1100px; margin: 30px auto 20px;
+            display: grid; grid-template-columns: 1.6fr 1fr; gap: 20px;
+        }
+        .hero-card { background: white; border-radius: 18px; padding: 30px; box-shadow: 0 8px 25px rgba(15,23,42,0.07); }
+        .hero-card h2 { font-size: 28px; color: #0f172a; margin-bottom: 12px; }
+        .hero-card p { color: #64748b; line-height: 1.7; }
+        .ai-card { background: linear-gradient(135deg, #dbeafe, #eff6ff); border: 1px solid #bfdbfe; }
+        .ai-card h3 { color: #1e40af; margin-bottom: 10px; }
+        .ai-card p { font-size: 14px; }
+
+        .container { width: 90%; max-width: 1100px; margin: 20px auto 40px; }
+        .form-card { background: white; border-radius: 18px; padding: 30px; box-shadow: 0 8px 25px rgba(15,23,42,0.07); }
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; flex-wrap: wrap; gap: 8px; }
+        .section-header h2 { color: #0f172a; font-size: 21px; }
+        .section-header span { font-size: 12px; color: #64748b; }
+
+        .form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .input-box { background: #f8fafc; padding: 17px; border: 1px solid #e2e8f0; border-radius: 12px; transition: 0.2s; }
+        .input-box:hover { border-color: #93c5fd; }
+        .input-box.invalid { border-color: #fca5a5; background: #fef2f2; }
+        .input-box label { display: block; font-size: 14px; font-weight: bold; color: #334155; margin-bottom: 8px; }
+        .input-box input {
+            width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px;
+            background: white; font-size: 15px; outline: none;
+        }
+        .input-box input:focus { border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.1); }
+        .description { display: block; margin-top: 6px; font-size: 11px; color: #94a3b8; }
+
+        .preview { margin-top: 25px; padding: 20px; background: #f8fafc; border-radius: 14px; border: 1px solid #e2e8f0; }
+        .preview-title { font-weight: bold; margin-bottom: 15px; color: #334155; }
+        .preview-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .preview-item { background: white; padding: 15px; border-radius: 10px; }
+        .preview-label { font-size: 12px; color: #64748b; }
+        .preview-value { font-size: 22px; font-weight: bold; color: #2563eb; margin-top: 5px; }
+
+        .progress-container { margin-top: 10px; }
+        .progress { width: 100%; height: 9px; background: #e2e8f0; border-radius: 20px; overflow: hidden; }
+        .progress-bar {
+            height: 100%; width: 0%;
+            background: linear-gradient(90deg, #2563eb, #60a5fa);
+            border-radius: 20px; transition: width 0.3s;
+        }
+
+        .button-area { margin-top: 30px; text-align: center; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+        .predict-button, .reset-button {
+            border: none; padding: 15px 40px; border-radius: 10px; font-size: 16px;
+            font-weight: bold; cursor: pointer; transition: 0.25s;
+        }
+        .predict-button {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white;
+            box-shadow: 0 7px 18px rgba(37,99,235,0.25);
+        }
+        .predict-button:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(37,99,235,0.35); }
+        .reset-button { background: #e5e7eb; color: #374151; }
+        .reset-button:hover { background: #d1d5db; transform: translateY(-2px); }
+
+        .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }
+        .info-card { background: white; padding: 22px; border-radius: 15px; box-shadow: 0 5px 18px rgba(15,23,42,0.06); }
+        .info-icon { font-size: 25px; margin-bottom: 12px; }
+        .info-card h3 { margin-bottom: 7px; color: #1e293b; }
+        .info-card p { font-size: 13px; color: #64748b; line-height: 1.6; }
+
+        footer { text-align: center; padding: 25px; color: #64748b; font-size: 12px; }
+
+        @media (max-width: 800px) {
+            .header { flex-direction: column; gap: 15px; text-align: center; }
+            .hero { grid-template-columns: 1fr; }
+            .form-grid { grid-template-columns: 1fr; }
+            .info-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="brand">
+        <div class="brand-icon">🎓</div>
+        <div>
+            <h1>Smart Attendance AI</h1>
+            <p>Attendance Monitoring & Risk Prediction System</p>
+        </div>
+    </div>
+    <div class="header-actions">
+        <a class="nav-link" href="{{ url_for('history') }}">📜 View History</a>
+        <div class="status">● AI Model Ready</div>
+    </div>
+</header>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div class="flash-wrap">
+        {% for category, message in messages %}
+            <div class="flash flash-{{ category }}">{{ message }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+{% endwith %}
+
+<section class="hero">
+    <div class="hero-card">
+        <h2>Predict Attendance Risk</h2>
+        <p>
+            Enter the student's attendance and academic information. The trained
+            machine learning model analyzes the data and predicts the student's
+            attendance risk category, along with a confidence score.
+        </p>
+    </div>
+
+    <div class="hero-card ai-card">
+        <h3>🤖 AI-Powered Analysis</h3>
+        <p>
+            The system uses attendance patterns, subject attendance, academic
+            performance, previous attendance and medical leave information for
+            prediction, and keeps a history of every prediction made.
+        </p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="form-card">
+
+        <div class="section-header">
+            <h2>Student Information</h2>
+            <span>All fields are required · values between 0-100 (medical leave in days)</span>
+        </div>
+
+        <form action="/predict" method="POST" id="predictForm" novalidate>
+            <div class="form-grid">
+
+                <div class="input-box">
+                    <label>Overall Attendance (%)</label>
+                    <input type="number" id="attendance" name="attendance" min="0" max="100" step="0.01" placeholder="Example: 75" required>
+                    <span class="description">Current overall attendance percentage</span>
+                </div>
+
+                <div class="input-box">
+                    <label>Mathematics Attendance (%)</label>
+                    <input type="number" name="math" min="0" max="100" step="0.01" placeholder="Example: 80" required>
+                    <span class="description">Mathematics attendance</span>
+                </div>
+
+                <div class="input-box">
+                    <label>Python Attendance (%)</label>
+                    <input type="number" name="python" min="0" max="100" step="0.01" placeholder="Example: 75" required>
+                    <span class="description">Python attendance</span>
+                </div>
+
+                <div class="input-box">
+                    <label>DBMS Attendance (%)</label>
+                    <input type="number" name="dbms" min="0" max="100" step="0.01" placeholder="Example: 78" required>
+                    <span class="description">DBMS attendance</span>
+                </div>
+
+                <div class="input-box">
+                    <label>AI Attendance (%)</label>
+                    <input type="number" name="ai" min="0" max="100" step="0.01" placeholder="Example: 82" required>
+                    <span class="description">Artificial Intelligence attendance</span>
+                </div>
+
+                <div class="input-box">
+                    <label>Internal Marks (%)</label>
+                    <input type="number" name="internal" min="0" max="100" step="0.01" placeholder="Example: 75" required>
+                    <span class="description">Internal examination performance</span>
+                </div>
+
+                <div class="input-box">
+                    <label>Assignment Performance (%)</label>
+                    <input type="number" name="assignment" min="0" max="100" step="0.01" placeholder="Example: 80" required>
+                    <span class="description">Assignment completion/performance</span>
+                </div>
+
+                <div class="input-box">
+                    <label>Previous Attendance (%)</label>
+                    <input type="number" name="previous" min="0" max="100" step="0.01" placeholder="Example: 78" required>
+                    <span class="description">Previous attendance percentage</span>
+                </div>
+
+                <div class="input-box">
+                    <label>Medical Leave (Days)</label>
+                    <input type="number" name="medical_leave" min="0" placeholder="Example: 2" required>
+                    <span class="description">Number of medical leave days</span>
+                </div>
+
+            </div>
+
+            <div class="preview">
+                <div class="preview-title">📊 Live Attendance Preview</div>
+                <div class="preview-row">
+                    <div class="preview-item">
+                        <div class="preview-label">Current Attendance</div>
+                        <div class="preview-value" id="attendanceValue">0%</div>
+                        <div class="progress-container">
+                            <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+                        </div>
+                    </div>
+                    <div class="preview-item">
+                        <div class="preview-label">Subject Average</div>
+                        <div class="preview-value" id="subjectAverage">0%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-area">
+                <button type="button" class="reset-button" id="resetBtn">↺ Reset</button>
+                <button type="submit" class="predict-button">🔍 Predict Attendance Risk</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <div class="info-icon">📊</div>
+            <h3>Data Analysis</h3>
+            <p>Attendance and academic attributes are processed before prediction.</p>
+        </div>
+        <div class="info-card">
+            <div class="info-icon">🧠</div>
+            <h3>Machine Learning</h3>
+            <p>The best of five trained classifiers predicts the attendance risk category.</p>
+        </div>
+        <div class="info-card">
+            <div class="info-icon">📈</div>
+            <h3>Risk Monitoring</h3>
+            <p>Every prediction is saved, so trends can be reviewed on the History page.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    Smart Attendance Monitoring and Risk Prediction System
+    <br>
+    AI/ML Academic Project
+</footer>
+
+<script>
+    const form = document.getElementById("predictForm");
+
+    const attendanceInput = document.getElementById("attendance");
+    const mathInput = document.querySelector('input[name="math"]');
+    const pythonInput = document.querySelector('input[name="python"]');
+    const dbmsInput = document.querySelector('input[name="dbms"]');
+    const aiInput = document.querySelector('input[name="ai"]');
+
+    const attendanceValue = document.getElementById("attendanceValue");
+    const subjectAverage = document.getElementById("subjectAverage");
+    const progressBar = document.getElementById("progressBar");
+
+    function updatePreview() {
+        const attendance = parseFloat(attendanceInput.value) || 0;
+        const math = parseFloat(mathInput.value) || 0;
+        const python = parseFloat(pythonInput.value) || 0;
+        const dbms = parseFloat(dbmsInput.value) || 0;
+        const ai = parseFloat(aiInput.value) || 0;
+
+        const average = (math + python + dbms + ai) / 4;
+
+        attendanceValue.textContent = attendance.toFixed(1) + "%";
+        subjectAverage.textContent = average.toFixed(1) + "%";
+        progressBar.style.width = Math.min(attendance, 100) + "%";
+    }
+
+    [attendanceInput, mathInput, pythonInput, dbmsInput, aiInput].forEach((el) =>
+        el.addEventListener("input", updatePreview)
+    );
+
+    // Highlight any field that's out of its valid range as the user types
+    form.querySelectorAll("input[type=number]").forEach((input) => {
+        input.addEventListener("input", () => {
+            const box = input.closest(".input-box");
+            const min = input.hasAttribute("min") ? parseFloat(input.min) : -Infinity;
+            const max = input.hasAttribute("max") ? parseFloat(input.max) : Infinity;
+            const value = parseFloat(input.value);
+            const isInvalid = input.value !== "" && (isNaN(value) || value < min || value > max);
+            box.classList.toggle("invalid", isInvalid);
+        });
+    });
+
+    document.getElementById("resetBtn").addEventListener("click", () => {
+        form.reset();
+        updatePreview();
+        form.querySelectorAll(".input-box").forEach((box) => box.classList.remove("invalid"));
+    });
+</script>
+
+</body>
+</html>

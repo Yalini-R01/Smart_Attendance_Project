@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Prediction Result</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, Helvetica, sans-serif; background: linear-gradient(135deg, #eef4ff, #f8fbff); min-height: 100vh; color: #1f2937; }
+
+        .header { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 25px 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.12); }
+        .header h1 { font-size: 30px; margin-bottom: 8px; }
+        .header p { font-size: 15px; opacity: 0.9; }
+
+        .container { max-width: 850px; margin: 45px auto; padding: 20px; }
+        .result-card { background: white; border-radius: 22px; padding: 40px; text-align: center; box-shadow: 0 10px 35px rgba(0,0,0,0.10); }
+        .result-card h2 { font-size: 28px; margin-bottom: 30px; color: #1e3a8a; }
+
+        .risk-circle {
+            width: 210px; height: 210px; border-radius: 50%; margin: 0 auto 20px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            border: 10px solid #e5e7eb; background: #f8fafc; box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+        }
+        .risk-circle .icon { font-size: 45px; margin-bottom: 10px; }
+        .risk-circle .risk-text { font-size: 24px; font-weight: bold; }
+
+        .low-risk { border-color: #22c55e; background: #f0fdf4; color: #15803d; }
+        .medium-risk { border-color: #f59e0b; background: #fffbeb; color: #b45309; }
+        .high-risk { border-color: #ef4444; background: #fef2f2; color: #b91c1c; }
+
+        .confidence-badge {
+            display: inline-block; margin-bottom: 25px; padding: 8px 18px;
+            background: #eff6ff; color: #1d4ed8; border-radius: 30px; font-size: 13px; font-weight: bold;
+        }
+
+        .attendance-box { margin: 25px 0; padding: 25px; background: #f8fafc; border-radius: 15px; border: 1px solid #e5e7eb; }
+        .attendance-title { font-size: 16px; color: #64748b; margin-bottom: 8px; }
+        .attendance-value { font-size: 42px; font-weight: bold; color: #2563eb; margin-bottom: 18px; }
+
+        .progress-container { width: 100%; height: 15px; background: #e5e7eb; border-radius: 20px; overflow: hidden; }
+        .progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, #2563eb, #60a5fa); border-radius: 20px; transition: width 0.8s ease; }
+
+        .info-box { margin-top: 25px; padding: 22px; background: #eff6ff; border-left: 5px solid #2563eb; border-radius: 10px; text-align: left; }
+        .info-box h3 { color: #1d4ed8; margin-bottom: 10px; }
+        .info-box p { color: #475569; line-height: 1.6; font-size: 14px; }
+
+        .buttons { margin-top: 30px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn { text-decoration: none; padding: 13px 24px; border-radius: 10px; font-size: 15px; font-weight: bold; transition: 0.3s; display: inline-block; }
+        .btn-primary { background: #2563eb; color: white; }
+        .btn-primary:hover { background: #1d4ed8; transform: translateY(-2px); }
+        .btn-secondary { background: #e5e7eb; color: #374151; }
+        .btn-secondary:hover { background: #d1d5db; transform: translateY(-2px); }
+
+        .footer { text-align: center; margin-top: 30px; color: #64748b; font-size: 13px; }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 24px; }
+            .container { margin: 25px auto; padding: 15px; }
+            .result-card { padding: 25px 18px; }
+            .result-card h2 { font-size: 23px; }
+            .risk-circle { width: 175px; height: 175px; }
+            .risk-circle .icon { font-size: 35px; }
+            .risk-circle .risk-text { font-size: 19px; }
+            .attendance-value { font-size: 35px; }
+            .btn { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Smart Attendance AI</h1>
+        <p>Attendance Monitoring and Risk Prediction System</p>
+    </div>
+
+    <div class="container">
+        <div class="result-card" id="resultCard" data-attendance="{{ attendance }}">
+
+            <h2>Attendance Risk Prediction</h2>
+
+            {% if prediction == "Low Risk" %}
+            <div class="risk-circle low-risk">
+                <div class="icon">✓</div>
+                <div class="risk-text">Low Risk</div>
+            </div>
+            {% elif prediction == "Medium Risk" %}
+            <div class="risk-circle medium-risk">
+                <div class="icon">!</div>
+                <div class="risk-text">Medium Risk</div>
+            </div>
+            {% else %}
+            <div class="risk-circle high-risk">
+                <div class="icon">!</div>
+                <div class="risk-text">High Risk</div>
+            </div>
+            {% endif %}
+
+            {% if confidence is not none %}
+            <div class="confidence-badge">Model confidence: {{ confidence }}%</div>
+            {% endif %}
+
+            <div class="attendance-box">
+                <div class="attendance-title">Current Attendance</div>
+                <div class="attendance-value">{{ attendance }}%</div>
+                <div class="progress-container">
+                    <div id="attendanceProgress" class="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>Prediction Status</h3>
+                {% if prediction == "Low Risk" %}
+                <p>The student currently has a low attendance risk. Continue maintaining regular attendance and academic performance.</p>
+                {% elif prediction == "Medium Risk" %}
+                <p>The student has a medium attendance risk. Regular attendance is recommended to avoid moving into the high-risk category.</p>
+                {% else %}
+                <p>The student is currently classified as high risk. Attendance should be improved and monitored regularly.</p>
+                {% endif %}
+            </div>
+
+            <div class="buttons">
+                <a href="/" class="btn btn-primary">🔄 Predict Another Student</a>
+                <a href="{{ url_for('history') }}" class="btn btn-secondary">📜 View History</a>
+            </div>
+
+        </div>
+
+        <div class="footer">Smart Attendance AI • Machine Learning Based Prediction</div>
+    </div>
+
+    <script>
+        const resultCard = document.getElementById("resultCard");
+        const progressBar = document.getElementById("attendanceProgress");
+        const attendanceValue = parseFloat(resultCard.dataset.attendance);
+
+        if (!isNaN(attendanceValue) && attendanceValue >= 0 && attendanceValue <= 100) {
+            progressBar.style.width = attendanceValue + "%";
+        }
+    </script>
+
+</body>
+</html>
